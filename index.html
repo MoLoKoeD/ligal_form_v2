@@ -1,0 +1,3308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ligal_form</title>
+  <style>
+    /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+
+    /* Document
+   ========================================================================== */
+
+    /**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+
+    html {
+      line-height: 1.15;
+      /* 1 */
+      -webkit-text-size-adjust: 100%;
+      /* 2 */
+    }
+
+    /* Sections
+   ========================================================================== */
+
+    /**
+ * Remove the margin in all browsers.
+ */
+
+    body {
+      margin: 0;
+    }
+
+    /**
+ * Render the `main` element consistently in IE.
+ */
+
+    main {
+      display: block;
+    }
+
+    /**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+
+    h1 {
+      font-size: 2em;
+      margin: 0.67em 0;
+    }
+
+    /* Grouping content
+   ========================================================================== */
+
+    /**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+
+    hr {
+      box-sizing: content-box;
+      /* 1 */
+      height: 0;
+      /* 1 */
+      overflow: visible;
+      /* 2 */
+    }
+
+    /**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+    pre {
+      font-family: monospace, monospace;
+      /* 1 */
+      font-size: 1em;
+      /* 2 */
+    }
+
+    /* Text-level semantics
+   ========================================================================== */
+
+    /**
+ * Remove the gray background on active links in IE 10.
+ */
+
+    a {
+      background-color: transparent;
+    }
+
+    /**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+
+    abbr[title] {
+      border-bottom: none;
+      /* 1 */
+      text-decoration: underline;
+      /* 2 */
+      text-decoration: underline dotted;
+      /* 2 */
+    }
+
+    /**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+
+    b,
+    strong {
+      font-weight: bolder;
+    }
+
+    /**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+    code,
+    kbd,
+    samp {
+      font-family: monospace, monospace;
+      /* 1 */
+      font-size: 1em;
+      /* 2 */
+    }
+
+    /**
+ * Add the correct font size in all browsers.
+ */
+
+    small {
+      font-size: 80%;
+    }
+
+    /**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+
+    sub,
+    sup {
+      font-size: 75%;
+      line-height: 0;
+      position: relative;
+      vertical-align: baseline;
+    }
+
+    sub {
+      bottom: -0.25em;
+    }
+
+    sup {
+      top: -0.5em;
+    }
+
+    /* Embedded content
+   ========================================================================== */
+
+    /**
+ * Remove the border on images inside links in IE 10.
+ */
+
+    img {
+      border-style: none;
+    }
+
+    /* Forms
+   ========================================================================== */
+
+    /**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+
+    button,
+    input,
+    optgroup,
+    select,
+    textarea {
+      font-family: inherit;
+      /* 1 */
+      font-size: 100%;
+      /* 1 */
+      line-height: 1.15;
+      /* 1 */
+      margin: 0;
+      /* 2 */
+    }
+
+    /**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+
+    button,
+    input {
+      /* 1 */
+      overflow: visible;
+    }
+
+    /**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+
+    button,
+    select {
+      /* 1 */
+      text-transform: none;
+    }
+
+    /**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+
+    button,
+    [type="button"],
+    [type="reset"],
+    [type="submit"] {
+      -webkit-appearance: button;
+    }
+
+    /**
+ * Remove the inner border and padding in Firefox.
+ */
+
+    button::-moz-focus-inner,
+    [type="button"]::-moz-focus-inner,
+    [type="reset"]::-moz-focus-inner,
+    [type="submit"]::-moz-focus-inner {
+      border-style: none;
+      padding: 0;
+    }
+
+    /**
+ * Restore the focus styles unset by the previous rule.
+ */
+
+    button:-moz-focusring,
+    [type="button"]:-moz-focusring,
+    [type="reset"]:-moz-focusring,
+    [type="submit"]:-moz-focusring {
+      outline: 1px dotted ButtonText;
+    }
+
+    /**
+ * Correct the padding in Firefox.
+ */
+
+    fieldset {
+      padding: 0.35em 0.75em 0.625em;
+    }
+
+    /**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+
+    legend {
+      box-sizing: border-box;
+      /* 1 */
+      color: inherit;
+      /* 2 */
+      display: table;
+      /* 1 */
+      max-width: 100%;
+      /* 1 */
+      padding: 0;
+      /* 3 */
+      white-space: normal;
+      /* 1 */
+    }
+
+    /**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+
+    progress {
+      vertical-align: baseline;
+    }
+
+    /**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+
+    textarea {
+      overflow: auto;
+    }
+
+    /**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+
+    [type="checkbox"],
+    [type="radio"] {
+      box-sizing: border-box;
+      /* 1 */
+      padding: 0;
+      /* 2 */
+    }
+
+    /**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+
+    [type="number"]::-webkit-inner-spin-button,
+    [type="number"]::-webkit-outer-spin-button {
+      height: auto;
+    }
+
+    /**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+
+    [type="search"] {
+      -webkit-appearance: textfield;
+      /* 1 */
+      outline-offset: -2px;
+      /* 2 */
+    }
+
+    /**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+
+    [type="search"]::-webkit-search-decoration {
+      -webkit-appearance: none;
+    }
+
+    /**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+
+    ::-webkit-file-upload-button {
+      -webkit-appearance: button;
+      /* 1 */
+      font: inherit;
+      /* 2 */
+    }
+
+    /* Interactive
+   ========================================================================== */
+
+    /*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+
+    details {
+      display: block;
+    }
+
+    /*
+ * Add the correct display in all browsers.
+ */
+
+    summary {
+      display: list-item;
+    }
+
+    /* Misc
+   ========================================================================== */
+
+    /**
+ * Add the correct display in IE 10+.
+ */
+
+    template {
+      display: none;
+    }
+
+    /**
+ * Add the correct display in IE 10.
+ */
+
+    [hidden] {
+      display: none;
+    }
+  </style>
+  <style>
+    html {
+      box-sizing: border-box;
+      height: 100%;
+    }
+
+    *,
+    *::before,
+    *::after {
+      box-sizing: inherit;
+    }
+
+    @font-face {
+      font-family: 'GothamPro';
+      src: url('../fonts/GothamPro.woff');
+      src: local('GothamPro'), local('GothamPro'),
+        url('../fonts/GothamPro.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    img {
+      max-width: 100%;
+    }
+
+    :root {
+      --white-color: #ffffff;
+      --dark-white-color: #f5f5f7;
+      --black-color: #000000;
+      --more-black-color: #222222;
+      --sun-black-color: #323232;
+      --gray-color: #c1c3c7;
+      --more-gray-color: #ececec;
+      --suny-black-color: #666666;
+      --dark-gray-color: #7c7c7c;
+      --input-color: #414141;
+      --button-color: #8A8890;
+    }
+
+    body {
+      font-family: 'GothamPro', 'Gotam Pro', sans-serif;
+      font-weight: 400;
+      min-width: 320px;
+      background-color: var(--white-color);
+      height: 100%;
+    }
+
+
+    /* glob */
+
+
+    .list-reset {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .btn-reset {
+      padding: 0;
+      border: none;
+      background-color: transparent;
+      cursor: pointer;
+    }
+
+    .flex {
+      display: flex;
+    }
+
+    .container {
+      max-width: 1920px;
+      padding: 0 15px;
+      margin: 0 auto;
+    }
+
+    .section-title {
+      margin: 0;
+      margin-bottom: 20px;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 28.8px;
+      color: var(--sun-black-color);
+    }
+
+    .section-descr {
+      margin: 0;
+      margin-bottom: 50px;
+      font-size: 16px;
+      line-height: 24px;
+      font-weight: 400;
+      color: var(--sun-black-color);
+    }
+
+    .section-offset {
+      padding-bottom: 100px;
+    }
+
+    .btn {
+      width: 100%;
+      position: relative;
+      outline: none;
+      padding: 12px 35px;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 20px;
+      color: var(--button-color);
+      background-color: var(--white-color);
+      transition: background-color 0.3s ease-in-out;
+      border: 1px solid var(--button-color);
+      border-radius: 22px;
+    }
+
+    .error {
+      border-bottom: 1px solid #FF0000;
+    }
+
+    .error-message {
+      color: #FF0000;
+    }
+
+    .input-for-img {
+      display: none;
+    }
+
+    .label-for-img {
+      min-height: 260px;
+      width: 100%;
+      border-radius: 18px;
+      object-fit: cover;
+      border: 1px solid var(--gray-color);
+      background-color: #ffffff;
+      position: relative;
+      cursor: pointer;
+    }
+
+    .img-for-form {
+      height: 100%;
+      min-height: 260px;
+      width: 100%;
+      border-radius: 18px;
+      object-fit: cover;
+    }
+
+    .form {
+      padding: 50px 60px;
+    }
+
+    .form_container {
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: center;
+    }
+
+    .text-for-form {
+      padding: 50px 40px;
+      border-radius: 18px;
+      background-color: var(--dark-white-color);
+      max-width: 688px;
+      max-height: 1011px;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      scrollbar-width: thin;
+      margin-bottom: 32px;
+      margin-right: 7%;
+    }
+
+    .text-for-form::-webkit-scrollbar {
+      width: 3px;
+    }
+
+    .text-for-form::-webkit-scrollbar-thumb {
+      border-radius: 100px;
+    }
+
+    .text_title {
+      text-align: center;
+      font-size: 34px;
+      line-height: 40.8px;
+      margin-bottom: 33px;
+      text-transform: uppercase;
+    }
+
+    .text_descr {
+      font-size: 18px;
+      line-height: 27px;
+      margin: 0;
+      margin-bottom: 20px;
+    }
+
+    .form_content {
+      width: 30%;
+    }
+
+    .form_item {
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 22px;
+    }
+
+    .form_item-img {
+      margin-bottom: 40px;
+      width: 100%;
+    }
+
+    .form_label,
+    .form_input {
+      width: 100%;
+    }
+
+    .form_label {
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 20px;
+      color: var(--sun-black-color);
+      margin-bottom: 17px;
+    }
+
+    .form_input {
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 16.8px;
+      color: var(--sun-black-color);
+      border: none;
+      padding: 0 0 17px 0;
+      border-bottom: 1px solid var(--gray-color);
+      outline: none;
+      margin-bottom: 10px;
+    }
+
+    .form_input::placeholder {
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 16.8px;
+      color: var(--gray-color);
+    }
+
+    .block_date {
+      display: block;
+    }
+    
+    .block-text {
+      width: 100% !important;
+    }
+
+    .block_date-item {
+      width: 100%;
+    }
+
+    .error {
+      border-bottom: 1px solid #FF0000;
+    }
+
+    .error-message {
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 16.8px;
+      color: #FF0000;
+    }
+
+    .form_button {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: nowrap;
+      max-width: 350px;
+    }
+
+    .btn {
+      max-width: 158px;
+    }
+
+    .text-bold {
+      font-weight: 700;
+    }
+
+    .text-indent {
+      text-indent: 30px;
+    }
+
+    .mb-0 {
+      margin: 0;
+    }
+
+    .mb-10 {
+      margin-bottom: 10px;
+    }
+
+    .mb-20 {
+      margin-bottom: 20px;
+    }
+
+    .mb-100 {
+      margin-bottom: 100px;
+    }
+
+    .pl-20 {
+      padding-left: 20px;
+    }
+
+    .text-up {
+      text-transform: uppercase;
+    }
+
+    .text-center {
+      text-align: center;
+    }
+
+    .row-for-table {
+      border: 1px solid var(--gray-color);
+      padding: 20px;
+    }
+
+    .row-for-table-2 {
+      border: none;
+      border-left: 1px solid var(--gray-color);
+      border-right: 1px solid var(--gray-color);
+    }
+
+    .table-descr {
+      font-size: 14px;
+      line-height: 20px;
+    }
+
+    .td-table {
+      align-content: flex-start;
+      padding: 4px;
+      border: 1px solid var(--gray-color);
+    }
+
+    .second-table {
+      border-collapse: collapse;
+    }
+
+    .table-overflow {
+      overflow: auto;
+    }
+
+    /* Для Chrome и Safari */
+    input[type="number"]::-webkit-inner-spin-button,
+    input[type="number"]::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+
+    /* Для Firefox */
+    input[type="number"] {
+      -moz-appearance: textfield;
+    }
+
+    /* Для IE и Edge */
+    input[type="number"]::-ms-clear {
+      display: none;
+    }
+
+    .example::-webkit-scrollbar {
+      display: none;
+    }
+
+    /* Hide scrollbar for IE, Edge and Firefox */
+    .example {
+      -ms-overflow-style: none;
+      /* IE and Edge */
+      scrollbar-width: none;
+      /* Firefox */
+    }
+  </style>
+  <style>
+    @media (max-width: 1250px) {
+      .form {
+        padding: 50px 40px;
+      }
+
+      .text-for-form {
+        padding: 50px 40px;
+        border-radius: 18px;
+        background-color: var(--dark-white-color);
+        max-width: 688px;
+        max-height: 1011px;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        scrollbar-width: thin;
+        margin-bottom: 32px;
+      }
+
+      .text-for-form::-webkit-scrollbar {
+        width: 3px;
+      }
+
+      .text-for-form::-webkit-scrollbar-thumb {
+        border-radius: 100px;
+      }
+
+      .text_title {
+        text-align: center;
+        font-size: 34px;
+        line-height: 40.8px;
+        margin-bottom: 33px;
+      }
+
+      .text_descr {
+        font-size: 18px;
+        line-height: 27px;
+        margin: 0;
+      }
+
+      .form_item {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 22px;
+      }
+
+      .form_label,
+      .form_input {
+        width: 100%;
+      }
+
+      .form_label {
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 20px;
+        color: var(--sun-black-color);
+        margin-bottom: 17px;
+      }
+
+      .form_input {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 16.8px;
+        color: var(--sun-black-color);
+        border: none;
+        padding: 0 0 17px 0;
+        border-bottom: 1px solid var(--gray-color);
+        outline: none;
+        margin-bottom: 10px;
+      }
+
+      .form_input::placeholder {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 16.8px;
+        color: var(--gray-color);
+      }
+
+      .error {
+        border-bottom: 1px solid #FF0000;
+      }
+
+      .error-message {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 16.8px;
+        color: #FF0000;
+      }
+
+      .btn {
+        padding: 12px;
+        max-width: 120px;
+      }
+
+      .text-bold {
+        font-weight: 700;
+      }
+
+      .text-indent {
+        text-indent: 30px;
+      }
+
+      .mb-0 {
+        margin: 0;
+      }
+
+      .mb-10 {
+        margin-bottom: 10px;
+      }
+
+      .mb-20 {
+        margin-bottom: 20px;
+      }
+
+      .mb-100 {
+        margin-bottom: 100px;
+      }
+
+      .pl-20 {
+        padding-left: 20px;
+      }
+
+      .text-up {
+        text-transform: uppercase;
+      }
+
+      .text-center {
+        text-align: center;
+      }
+
+      .row-for-table {
+        padding: 10px;
+      }
+
+      .text-for-table {
+        font-size: 14px;
+        line-height: 18px;
+      }
+
+      .table-title {
+        font-size: 25px;
+        line-height: 32px;
+      }
+
+      .table-descr {
+        font-size: 12px;
+        line-height: 16px;
+      }
+    }
+
+    @media (max-width: 1100px) {
+      .form_container {
+        flex-wrap: wrap;
+      }
+
+      .form_content {
+        width: 80%;
+      }
+
+      .text-for-form {
+        max-width: 80%;
+        margin-right: 0;
+      }
+
+      .text-for-form::-webkit-scrollbar {
+        width: 3px;
+      }
+
+      .text-for-form::-webkit-scrollbar-thumb {
+        border-radius: 100px;
+      }
+
+      .text_title {
+        text-align: center;
+        font-size: 34px;
+        line-height: 40.8px;
+        margin-bottom: 33px;
+      }
+
+      .text_descr {
+        font-size: 18px;
+        line-height: 27px;
+        margin: 0;
+      }
+
+      .form_item {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 22px;
+      }
+
+      .form_item-img {
+        width: 40%;
+      }
+
+      .form_label,
+      .form_input {
+        width: 100%;
+      }
+
+      .form_label {
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 20px;
+        color: var(--sun-black-color);
+        margin-bottom: 17px;
+      }
+
+      .form_input {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 16.8px;
+        color: var(--sun-black-color);
+        border: none;
+        padding: 0 0 17px 0;
+        border-bottom: 1px solid var(--gray-color);
+        outline: none;
+        margin-bottom: 10px;
+      }
+
+      .form_input::placeholder {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 16.8px;
+        color: var(--gray-color);
+      }
+
+      .block_date {
+        display: block;
+      }
+
+      .block_date-item {
+        width: 100%;
+      }
+
+      .error {
+        border-bottom: 1px solid #FF0000;
+      }
+
+      .error-message {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 16.8px;
+        color: #FF0000;
+      }
+
+      .form_button {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        width: 50%;
+      }
+
+      .btn {
+        max-width: 158px;
+      }
+
+      .text-bold {
+        font-weight: 700;
+      }
+
+      .text-indent {
+        text-indent: 30px;
+      }
+
+      .mb-0 {
+        margin: 0;
+      }
+
+      .mb-10 {
+        margin-bottom: 10px;
+      }
+
+      .mb-20 {
+        margin-bottom: 20px;
+      }
+
+      .mb-100 {
+        margin-bottom: 100px;
+      }
+
+      .pl-20 {
+        padding-left: 20px;
+      }
+
+      .text-up {
+        text-transform: uppercase;
+      }
+
+      .text-center {
+        text-align: center;
+      }
+
+      .row-for-table {
+        padding: 10px;
+      }
+
+      .text-for-table {
+        font-size: 14px;
+        line-height: 18px;
+      }
+
+      .table-title {
+        font-size: 25px;
+        line-height: 32px;
+      }
+
+      .table-descr {
+        font-size: 12px;
+        line-height: 16px;
+      }
+    }
+
+    @media (max-width: 900px) {
+      .form_item-img {
+        min-width: 45%;
+      }
+
+      .form_button {
+        width: 60%;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .form {
+        padding: 50px 40px;
+      }
+
+      .form_content {
+        width: 100%;
+        max-width: 664px;
+      }
+
+      .text-for-form {
+        padding: 50px 40px;
+        border-radius: 18px;
+        background-color: var(--dark-white-color);
+        max-width: 664px;
+        max-height: 1011px;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        scrollbar-width: thin;
+        margin-bottom: 32px;
+      }
+
+      .text-for-form::-webkit-scrollbar {
+        width: 3px;
+      }
+
+      .text-for-form::-webkit-scrollbar-thumb {
+        border-radius: 100px;
+      }
+
+      .text_title {
+        text-align: center;
+        font-size: 34px;
+        line-height: 40.8px;
+        margin-bottom: 33px;
+      }
+
+      .text_descr {
+        font-size: 18px;
+        line-height: 27px;
+        margin: 0;
+      }
+
+      .form_item {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 22px;
+      }
+
+      .form_item-img {
+        width: 50%;
+        min-width: 50%;
+      }
+
+      .form_label,
+      .form_input {
+        width: 100%;
+      }
+
+      .form_label {
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 20px;
+        color: var(--sun-black-color);
+        margin-bottom: 17px;
+      }
+
+      .form_input {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 16.8px;
+        color: var(--sun-black-color);
+        border: none;
+        padding: 0 0 17px 0;
+        border-bottom: 1px solid var(--gray-color);
+        outline: none;
+        margin-bottom: 10px;
+      }
+
+      .form_input::placeholder {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 16.8px;
+        color: var(--gray-color);
+      }
+
+      .block_date {
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      .block_date-item {
+        width: 40%;
+        margin-right: 10%;
+      }
+
+      .error {
+        border-bottom: 1px solid #FF0000;
+      }
+
+      .error-message {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 16.8px;
+        color: #FF0000;
+      }
+
+      .form_button {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        width: 100%;
+      }
+
+      .btn {
+        max-width: 158px;
+      }
+
+      .text-bold {
+        font-weight: 700;
+      }
+
+      .text-indent {
+        text-indent: 30px;
+      }
+
+      .mb-0 {
+        margin: 0;
+      }
+
+      .mb-10 {
+        margin-bottom: 10px;
+      }
+
+      .mb-20 {
+        margin-bottom: 20px;
+      }
+
+      .mb-100 {
+        margin-bottom: 100px;
+      }
+
+      .pl-20 {
+        padding-left: 20px;
+      }
+
+      .text-up {
+        text-transform: uppercase;
+      }
+
+      .text-center {
+        text-align: center;
+      }
+
+      .row-for-table {
+        padding: 10px;
+      }
+
+      .text-for-table {
+        font-size: 14px;
+        line-height: 18px;
+      }
+
+      .table-title {
+        font-size: 25px;
+        line-height: 32px;
+      }
+
+      .table-descr {
+        font-size: 12px;
+        line-height: 16px;
+      }
+    }
+
+    @media (max-width: 590px) {
+      .text_title {
+        margin: 0;
+        margin-bottom: 20px;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 28.8px;
+        color: var(--sun-black-color);
+      }
+
+      .text_descr {
+        margin: 0;
+        margin-bottom: 50px;
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 400;
+        color: var(--sun-black-color);
+      }
+
+      .form_item-img {
+        width: 60%;
+        min-width: 60%;
+      }
+
+      .block_date {
+        display: block;
+      }
+
+      .block_date-item {
+        width: 100%;
+        margin-right: 0;
+      }
+
+      .text-bold {
+        font-weight: 700;
+      }
+
+      .text-indent {
+        text-indent: 30px;
+      }
+
+      .mb-0 {
+        margin: 0;
+      }
+
+      .mb-10 {
+        margin-bottom: 10px;
+      }
+
+      .mb-20 {
+        margin-bottom: 20px;
+      }
+
+      .mb-100 {
+        margin-bottom: 100px;
+      }
+
+      .pl-20 {
+        padding-left: 20px;
+      }
+
+      .text-up {
+        text-transform: uppercase;
+      }
+
+      .text-center {
+        text-align: center;
+      }
+
+      .row-for-table {
+        padding: 10px;
+      }
+
+      .text-for-table {
+        font-size: 14px;
+        line-height: 18px;
+      }
+
+      .table-title {
+        font-size: 25px;
+        line-height: 32px;
+      }
+
+      .table-descr {
+        font-size: 12px;
+        line-height: 16px;
+      }
+    }
+
+    @media (max-width: 500px) {
+      .form {
+        padding: 0 0 60px 0;
+      }
+
+      .text-for-form {
+        padding: 16px 16px;
+        border-radius: 18px;
+        background-color: var(--dark-white-color);
+        max-width: 100%;
+        max-height: 650px;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        scrollbar-width: thin;
+        margin-bottom: 32px;
+      }
+
+      .text-for-form::-webkit-scrollbar {
+        width: 3px;
+      }
+
+      .text-for-form::-webkit-scrollbar-thumb {
+        border-radius: 100px;
+      }
+
+      .text_title {
+        text-align: center;
+      }
+
+      .form_item {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 22px;
+      }
+
+      .form_label,
+      .form_input {
+        width: 100%;
+      }
+
+      .form_label {
+        font-size: 14px;
+        line-height: 20px;
+        color: var(--sun-black-color);
+        margin-bottom: 17px;
+      }
+
+      .form_input {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 16.8px;
+        color: var(--sun-black-color);
+        border: none;
+        padding: 0 0 17px 0;
+        border-bottom: 1px solid var(--gray-color);
+        outline: none;
+        margin-bottom: 10px;
+      }
+
+      .form_input::placeholder {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 16.8px;
+        color: var(--gray-color);
+      }
+
+      .error {
+        border-bottom: 1px solid #FF0000;
+      }
+
+      .error-message {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 16.8px;
+        color: #FF0000;
+      }
+
+      .form_button {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        width: 100%;
+      }
+
+      .btn {
+        max-width: 158px;
+      }
+
+      .text-bold {
+        font-weight: 700;
+      }
+
+      .text-indent {
+        text-indent: 30px;
+      }
+
+      .mb-0 {
+        margin: 0;
+      }
+
+      .mb-10 {
+        margin-bottom: 10px;
+      }
+
+      .mb-20 {
+        margin-bottom: 20px;
+      }
+
+      .mb-100 {
+        margin-bottom: 100px;
+      }
+
+      .pl-20 {
+        padding-left: 20px;
+      }
+
+      .text-up {
+        text-transform: uppercase;
+      }
+
+      .text-center {
+        text-align: center;
+      }
+
+      .row-for-table {
+        padding: 10px;
+      }
+
+      .text-for-table {
+        font-size: 14px;
+        line-height: 18px;
+      }
+
+      .table-title {
+        font-size: 20px;
+        line-height: 32px;
+      }
+
+      .table-descr {
+        font-size: 12px;
+        line-height: 16px;
+      }
+    }
+
+    @media (max-width: 420px) {
+      .form_item-img {
+        width: 100%;
+      }
+
+      .form_button {
+        max-width: 100%;
+      }
+    }
+
+    @media (max-width: 365px) {
+      .btn {
+        width: 40%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="form">
+    <div class="form_container">
+      <div class="text-for-form example">
+        <h3 class="text_title section-title table-title">
+          Соглашение о&nbsp;неразглашении конфиденциальной информации
+        </h3>
+        <p class="text_descr section-descr text-for-table text-bold mb-20">
+          г. Санкт-Петербург
+        </p>
+        <p class="text_descr section-descr text-for-table text-indent mb-20">
+          Настоящее соглашение о&nbsp;неразглашении конфиденциальной информации (далее&nbsp;&ndash; <span
+            class="text-bold">&laquo;Соглашение&raquo;</span>) заключено между:
+        </p>
+        <p class="text_descr section-descr text-for-table text-indent mb-0">
+          <span class="text-bold">Обществом с&nbsp;ограниченной ответственностью &laquo;Альфатрейд&raquo;</span>,
+          юридическим лицом, зарегистрированным по&nbsp;законодательству Российской Федерации (далее&nbsp;&ndash; <span
+            class="text-bold">&laquo;Раскрывающая сторона&raquo;</span>), в&nbsp;лице генерального директора Гордиенко
+          Марка Владимировича, действующего на&nbsp;основании устава, с&nbsp;одной стороны, и
+        </p>
+        <p class="text_descr section-descr text-for-table text-indent mb-20">
+          <span class="text-bold">Пользователем, присоединившимся к&nbsp;условиям настоящего Соглашения</span>,
+          (далее&nbsp;&mdash; <span class="text-bold">&laquo;Пользователь&raquo;</span>), с&nbsp;другой стороны.
+        </p>
+        <p class="text_descr section-descr text-for-table mb-20">
+          Для Целей настоящего Соглашения Раскрывающая сторона и&nbsp;Пользователь совместно именуются <span
+            class="text-bold">&laquo;Стороны&raquo;</span>, а&nbsp;по-отдельности&nbsp;&ndash; <span
+            class="text-bold">&laquo;Сторона&raquo;</span>.
+        </p>
+        <p class="text_descr section-descr text-for-table mb-20">
+          <span class="text-up">Принимая во&nbsp;внимание</span>&nbsp;то, что Раскрывающая сторона располагает
+          определенной Конфиденциальной информацией.
+        </p>
+        <p class="text_descr section-descr text-for-table mb-20">
+          Целью использования Пользователем Конфиденциальной информации является выполнение обязательств по&nbsp;всем
+          договорам/проектам, которые были и/или будут заключены впоследствии (далее&nbsp;&ndash; <span
+            class="text-bold">&laquo;Цели&raquo;</span>), а&nbsp;также&nbsp;то, что Конфиденциальная информация
+          Раскрывающей стороны может быть доступна Стороне, Пользователю,
+        </p>
+        <p class="text_descr section-descr text-for-table mb-20">
+          <span class="text-up">Принимая во&nbsp;внимание</span>&nbsp;то, что Раскрывающая сторона желает предотвратить
+          несанкционированное использование и&nbsp;раскрытие своей Конфиденциальной информации.
+        </p>
+        <p class="text_descr section-descr text-for-table mb-20">
+          Настоящим Стороны договорились о&nbsp;нижеследующем:
+        </p>
+        <ol class="list-for-form mb-20 text-for-table">
+          <li class="list_item-for-form mb-20">
+            <p class="text_descr section-descr text-for-table mb-0">
+              В&nbsp;Целях настоящего Соглашения следующие термины имеют указанные для них значения:
+            </p>
+            <p class="text_descr section-descr text-for-table mb-0">
+              1.1. <span class="text-bold">&laquo;Конфиденциальная информация&raquo;</span>&nbsp;&mdash; информация,
+              представленная в&nbsp;любой форме (в&nbsp;том числе в&nbsp;устной, электронной, документарной,
+              на&nbsp;любых материальных носителях), в&nbsp;том числе обозначенная Раскрывающей стороной или
+              аффилированными с&nbsp;ней лицами в&nbsp;качестве конфиденциальной любым доступным способом (устно, путем
+              нанесения на&nbsp;документы и&nbsp;иные материальные носители информации или вставки в&nbsp;текст
+              сообщений, отправляемых по&nbsp;электронной почте, грифа &laquo;конфиденциально&raquo; или иного
+              аналогичного обозначения, а&nbsp;также любым иным способом), передаваемая Раскрывающей стороной
+              Пользователю или ставшая известной Пользователю иным способом.
+            </p>
+            <p class="text_descr section-descr text-for-table mb-0">
+              К&nbsp;Конфиденциальной информации относится, в&nbsp;том числе следующая информация,
+              но&nbsp;не&nbsp;ограничиваясь&nbsp;ею:
+            </p>
+            <p class="text_descr section-descr text-for-table mb-0">
+              1.1.1. Касающаяся корпоративной структуры и&nbsp;принятия управленческих решений, в&nbsp;частности:
+            </p>
+            <p class="text_descr section-descr text-for-table mb-0">
+              1.1.1.1. О&nbsp;корпоративной структуре юридических лиц, участником&nbsp;/ исполнительным органом которых
+              является Раскрывающая сторона, методах управления таким юридическим лицом;
+            </p>
+            <p class="text_descr section-descr text-for-table mb-0">
+              1.1.1.2. О&nbsp;подготовке, принятии и&nbsp;об&nbsp;исполнении отдельных решений Раскрывающей стороной
+              по&nbsp;коммерческим, организационным, производственным, научно-техническим и&nbsp;иным вопросам, методике
+              привлечения и&nbsp;обслуживания контрагентов, методике найма, обучения, развития, работы персонала
+              и&nbsp;контроля за&nbsp;ней;
+            </p>
+            <p class="text_descr section-descr text-for-table mb-0">
+              1.1.1.3. О&nbsp;заключаемых договорах и&nbsp;их&nbsp;содержании, финансовых результатах, прогнозах,
+              доходах, расходах и&nbsp;ценовой политике в&nbsp;отношении заключаемых договоров.
+            </p>
+            <p class="text_descr section-descr text-for-table mb-0">
+              1.1.2. Касающаяся состояния&nbsp;/ статуса как Раскрывающей стороны, так и&nbsp;юридических лиц,
+              участником&nbsp;/ исполнительным органом которых является Раскрывающая сторона, в&nbsp;частности:
+            </p>
+            <p class="text_descr section-descr text-for-table mb-0">
+              1.1.2.1. О&nbsp;правовом положении (гражданство, дееспособность, применяемые в&nbsp;отношении Раскрывающей
+              стороны меры гражданской, административной, иной ответственности и&nbsp;проч.);
+            </p>
+            <p class="text_descr section-descr text-for-table mb-0">
+              1.1.2.2. О&nbsp;личном и&nbsp;социальном статусе (персональные данные, семейное положение, профессия,
+              образование, адрес регистрации&nbsp;/ проживания, передвижения внутри Российской Федерации
+              и&nbsp;за&nbsp;ее&nbsp;пределами и&nbsp;проч.);
+            </p>
+            <p class="text_descr section-descr text-for-table mb-0">
+              1.1.2.3. О&nbsp;финансовом положении (предпринимательская деятельность, состояние банковских счетов,
+              производимые операции, уровень доходов, имущество, долговые обязательства и&nbsp;проч.).
+            </p>
+            <p class="text_descr section-descr text-for-table mb-0">
+              1.1.3. Касающаяся нематериальных активов как Раскрывающей стороны, так и&nbsp;юридических лиц,
+              участником&nbsp;/ исполнительным органом которых является Раскрывающая сторона, в&nbsp;частности:
+            </p>
+            <p class="text_descr section-descr text-for-table mb-0">
+              1.1.3.1. Деловые связи;
+            </p>
+            <p class="text_descr section-descr text-for-table mb-0">
+              1.1.3.2. Наименования&nbsp;/ ФИО, адреса, контактные данные (номера телефонов, факсов, электронной почты),
+              иные персональные данные, банковские и&nbsp;иные реквизиты контрагентов, партнеров, работников;
+            </p>
+            <p class="text_descr section-descr text-for-table mb-0">
+              1.1.3.3. Сведения, касающиеся результатов интеллектуальной деятельности и/или средств индивидуализации,
+              в&nbsp;том числе в&nbsp;отношении порядка их&nbsp;создания, приобретения, отчуждения, регистрации (ином
+              оформлении прав), порядка использования и&nbsp;любых иных действий.
+            </p>
+            <p class="text_descr section-descr text-for-table mb-0">
+              1.1.4. Иная информация, в&nbsp;частности:
+            </p>
+            <p class="text_descr section-descr text-for-table mb-0">
+              1.1.4.1. Информация, подпадающая под любой из&nbsp;видов охраняемой законом тайны, в&nbsp;том числе
+              в&nbsp;отношении которой Раскрывающая сторона ввела режим коммерческой тайны;
+            </p>
+            <p class="text_descr section-descr text-for-table mb-0">
+              1.1.4.2. Любая иная информация, относящаяся к&nbsp;Раскрывающей стороне, если по&nbsp;своему существу она
+              удовлетворяет термину, указанному в&nbsp;п.&nbsp;1.1. Соглашения;
+            </p>
+            <p class="text_descr section-descr text-for-table mb-0">
+              1.1.4.3. Информация, не&nbsp;подпадающая под указанный выше перечень, но&nbsp;отмеченная Раскрывающей
+              стороной в&nbsp;качестве конфиденциальной путем использования грифов &laquo;Конфиденциально&raquo;,
+              &laquo;Секретно&raquo;, &laquo;Коммерческая тайна&raquo; или путем использования предупреждений
+              о&nbsp;конфиденциальности в&nbsp;подписях к&nbsp;электронным письмам, устных или письменных
+              предупреждений, но&nbsp;не&nbsp;ограничиваясь такими способами.
+            </p>
+            <p class="text_descr section-descr text-for-table mb-0">
+              1.2. <span class="text-bold">&laquo;Раскрывающая сторона&raquo;</span>&nbsp;&mdash; сторона, раскрывающая
+              Конфиденциальную информацию в&nbsp;соответствии с&nbsp;настоящим Соглашением.
+            </p>
+            <p class="text_descr section-descr text-for-table mb-0">
+              1.3. <span class="text-bold">&laquo;Пользователь&raquo;</span>&nbsp;&mdash; сторона, принимающая
+              Конфиденциальную информацию в&nbsp;соответствии с&nbsp;настоящим Соглашением.
+            </p>
+          </li>
+          <li class="list_item-for-form mb-20">
+            <p class="text_descr section-descr text-for-table mb-0">
+              Пользователь настоящим обязуется получать и&nbsp;хранить с&nbsp;соблюдением конфиденциальности
+              Конфиденциальную информацию, в&nbsp;частности Пользователь обязуется:
+            </p>
+            <p class="text_descr section-descr text-for-table mb-0">
+              2.1. Принимать разумно достаточные меры по&nbsp;охране Конфиденциальной информации, полученной
+              в&nbsp;рамках настоящего Соглашения. При этом Пользователь обязуется осуществлять меры по&nbsp;охране
+              полученной Конфиденциальной информации в&nbsp;объеме не&nbsp;меньшем, чем осуществляется Пользователем для
+              охраны собственной Конфиденциальной информации, но&nbsp;в&nbsp;любом случае такие меры должны быть
+              разумными и&nbsp;достаточными.
+            </p>
+            <p class="text_descr section-descr text-for-table mb-0">
+              2.2. Ограничивать доступ к&nbsp;Конфиденциальной информации. Если Конфиденциальная информация содержится
+              в&nbsp;физическом или электронном виде, Пользователь должен принять все разумные технические
+              и&nbsp;организационные меры по&nbsp;предотвращению разглашения Конфиденциальной информации.
+            </p>
+            <p class="text_descr section-descr text-for-table mb-0">
+              2.3. Пользователь, а&nbsp;также его представители, имеющие доступ к&nbsp;Конфиденциальной информации,
+              должны использовать Конфиденциальную информацию исключительно для достижения Целей предоставления
+              Конфиденциальной информации и&nbsp;не&nbsp;использовать ее&nbsp;для каких-либо других целей;
+            </p>
+            <p class="text_descr section-descr text-for-table mb-0">
+              2.4. Не&nbsp;разглашать Конфиденциальную информацию третьим лицам полностью или частично, без
+              предварительного письменного (или по&nbsp;электронной почте) согласия Раскрывающей стороны.
+              Ответственность за&nbsp;действия и/или бездействия третьих лиц полностью лежит на&nbsp;Пользователе.
+            </p>
+            <p class="text_descr section-descr text-for-table mb-20">
+              2.5. Не&nbsp;осуществлять копирование, компиляцию, перевод или любое иное документирование
+              Конфиденциальной информации, а&nbsp;также создание любых информационных ресурсов иначе, чем для достижения
+              Целей предоставления Конфиденциальной информации.
+            </p>
+            <p class="text_descr section-descr text-for-table mb-20">
+              В&nbsp;рамках настоящего Соглашения под разумно достаточными мерами по&nbsp;охране Конфиденциальной
+              информации понимаются такие меры, которые исключают доступ к&nbsp;Конфиденциальной информации третьих лиц
+              без согласия Раскрывающей стороны, а&nbsp;также обеспечивают возможность использования и&nbsp;передачи
+              Конфиденциальной информации без нарушения режима ее&nbsp;конфиденциальности. При этом для достижения
+              указанных Целей, Пользователь самостоятельно определяет необходимый набор мер и&nbsp;не&nbsp;обязательно
+              должна принимать комплекс правовых, организационных, технических и&nbsp;иных мер по&nbsp;охране
+              конфиденциальности, предусмотренный Федеральным законом от&nbsp;29.07.2004&nbsp;г. &#8470;&nbsp;98-ФЗ
+              &laquo;О&nbsp;коммерческой тайне&raquo;.
+            </p>
+            <p class="text_descr section-descr text-for-table">
+              В&nbsp;рамках настоящего Соглашения под разглашением Конфиденциальной информации понимается любое действие
+              или бездействие Пользователя, в&nbsp;результате которого Конфиденциальная информация в&nbsp;любой
+              возможной форме (физической, устной, письменной, электронной, иной форме, в&nbsp;том числе
+              с&nbsp;использованием технических средств) становится известной третьим лицам без согласия Раскрывающей
+              стороны.
+            </p>
+          </li>
+          <li class="list_item-for-form mb-20">
+            <p class="text_descr section-descr text-for-table">
+              Раскрывающая сторона оставляет за&nbsp;собой право проводить анализ мер по&nbsp;защите Конфиденциальной
+              информации Пользователя. При отказе Пользователя от&nbsp;предоставления информации о&nbsp;мерах
+              по&nbsp;защите Конфиденциальной информации или выявлении недостаточности предпринимаемых мер
+              по&nbsp;защите Конфиденциальной информации, Раскрывающая сторона вправе отказать в&nbsp;предоставлении
+              Конфиденциальной информации.
+            </p>
+          </li>
+          <li class="list_item-for-form mb-20">
+            <p class="text_descr section-descr text-for-table">
+              По&nbsp;требованию Раскрывающей стороны, передавшей Конфиденциальную информацию, все оригиналы
+              и&nbsp;копии Конфиденциальной информации подлежат незамедлительному возврату Пользователем. Любая
+              Конфиденциальная информация, переданная Раскрывающей стороной в&nbsp;рамках исполнения Цели Соглашения,
+              не&nbsp;истребованная вышеуказанным способом, будет храниться Пользователем с&nbsp;соблюдением требований
+              настоящего Соглашения в&nbsp;течение срока его действия либо будет уничтожена по&nbsp;согласованию
+              с&nbsp;Раскрывающей стороной за&nbsp;счет Раскрывающей стороны. Во&nbsp;избежание неверного толкования
+              настоящим Стороны согласились, что возврат или уничтожение Пользователем документированной
+              Конфиденциальной информации, не&nbsp;освобождает Пользователя от&nbsp;исполнения своих обязательств
+              в&nbsp;связи с&nbsp;настоящим Соглашением. При этом, если Пользователю потребуются копии Конфиденциальной
+              информации Раскрывающей стороны для обеспечения защиты своих интересов в&nbsp;суде, Раскрывающая сторона
+              обязуется предоставить такие копии по&nbsp;обоснованному требованию Пользователя (с&nbsp;последующим
+              возвратом)
+            </p>
+          </li>
+          <li class="list_item-for-form mb-20">
+            <p class="text_descr section-descr text-for-table">
+              Если Пользователь или его Представители будут обязаны по&nbsp;закону раскрыть какую-либо Конфиденциальную
+              информацию органам государственной власти&nbsp;РФ или органам государственной власти субъектов&nbsp;РФ,
+              либо органам государственной власти иностранных государств, а&nbsp;также иным органам, уполномоченным
+              законодательством требовать раскрытия Конфиденциальной информации, Пользователь обязан немедленно
+              письменно (или по&nbsp;электронной почте) уведомить об&nbsp;этом факте Раскрывающую Сторону. При этом
+              в&nbsp;случае надлежащего уведомления Раскрывающей стороны, Пользователь, раскрывающий Конфиденциальную
+              информацию в&nbsp;соответствии с&nbsp;настоящим пунктом, не&nbsp;считается нарушившим своего обязательства
+              о&nbsp;неразглашении Конфиденциальной информации. В&nbsp;случае такого раскрытия Пользователь обязуется
+              сделать все от&nbsp;него зависящее для того, чтобы обеспечить конфиденциальность раскрытой
+              Конфиденциальной информации.
+            </p>
+          </li>
+          <li class="list_item-for-form mb-20">
+            <p class="text_descr section-descr text-for-table">
+              Настоящее Соглашение вступает в&nbsp;силу в&nbsp;момент присоединения Пользователя к&nbsp;условиям
+              настоящего Соглашения, дополнительно распространяя свое действие на&nbsp;отношения Сторон, возникшие
+              в&nbsp;момент заключения любого договора с&nbsp;Раскрывающей стороной (договора гражданского-правового
+              характера или иного договора, устанавливающего между Сторонами гражданские правоотношения),
+              в&nbsp;соответствии с&nbsp;п.&nbsp;2&nbsp;ст.&nbsp;425 Гражданского кодекса&nbsp;РФ, действует
+              в&nbsp;течение всего срока действия договора гражданского-правового характера или иного договора,
+              устанавливающего между Сторонами гражданские правоотношения, а&nbsp;также в&nbsp;течение&nbsp;5 (пяти) лет
+              с&nbsp;момента его расторжения. Также действие настоящего Соглашения распространяется
+              на&nbsp;Конфиденциальную информацию, переданную (полученную) как&nbsp;до, так и&nbsp;после заключения
+              настоящего Соглашения.
+            </p>
+          </li>
+          <li class="list_item-for-form mb-20">
+            <p class="text_descr section-descr text-for-table">
+              Настоящее Соглашение регулируется и&nbsp;подлежит исполнению и&nbsp;толкованию в&nbsp;соответствии
+              с&nbsp;законодательством Российской Федерации.
+            </p>
+          </li>
+          <li class="list_item-for-form mb-20">
+            <p class="text_descr section-descr text-for-table">
+              В&nbsp;случае разглашения или иного несанкционированного использования Конфиденциальной информации
+              Раскрывающей стороны, произошедшего в&nbsp;результате действий (бездействия) Пользователя, Пользователь
+              по&nbsp;письменному требованию Раскрывающей стороны обязан возместить убытки, понесенные Раскрывающей
+              стороной, в&nbsp;полном объеме. Кроме того, сверх возмещения убытков, Раскрывающая сторона вправе
+              потребовать, а&nbsp;Пользователь обязан выплатить штраф в&nbsp;размере 3&nbsp;000&nbsp;000 (трех
+              миллионов) рублей.
+            </p>
+          </li>
+          <li class="list_item-for-form mb-20">
+            <p class="text_descr section-descr text-for-table">
+              Убытки и&nbsp;штраф, предусмотренные&nbsp;п.&nbsp;8&nbsp;Соглашения, подлежат возмещению и&nbsp;оплате
+              в&nbsp;течение&nbsp;5 (пяти) рабочих дней с&nbsp;даты получения Пользователем письменного требования
+              от&nbsp;Раскрывающей стороны.
+            </p>
+          </li>
+          <li class="list_item-for-form mb-20">
+            <p class="text_descr section-descr text-for-table">
+              Настоящее Соглашение не&nbsp;предполагает передачи или уступки Пользователю каких-либо объектов авторского
+              права, патентов, зарегистрированных моделей, незарегистрированных моделей, товарных знаков и&nbsp;знаков
+              обслуживания, или каких-либо иных прав Раскрывающей стороны на&nbsp;результаты интеллектуальной
+              деятельности, которые могут содержаться или воспроизводиться в&nbsp;Конфиденциальной информации. Как
+              Пользователь, так и&nbsp;какие-либо иные лица от&nbsp;его имени обязуются не&nbsp;обращаться
+              за&nbsp;регистрацией товарного знака и/или знака обслуживания, патента, или модели, а&nbsp;также иных прав
+              на&nbsp;результаты интеллектуальной деятельности в&nbsp;отношении Конфиденциальной информации или
+              какой-либо ее&nbsp;части.
+            </p>
+          </li>
+          <li class="list_item-for-form mb-20">
+            <p class="text_descr section-descr text-for-table">
+              Настоящим Стороны обязуются не&nbsp;переуступать и&nbsp;не&nbsp;передавать каким-либо иным образом свои
+              права и&nbsp;обязанности, вытекающие из&nbsp;настоящего Соглашения без предварительного письменного
+              согласия другой Стороны.
+            </p>
+          </li>
+          <li class="list_item-for-form mb-20">
+            <p class="text_descr section-descr text-for-table">
+              Споры, возникающие в&nbsp;связи или вытекающие из&nbsp;настоящего Соглашения, разрешаются путем
+              переговоров. В&nbsp;случае неурегулирования спора путем переговоров Стороны договорились
+              об&nbsp;обязательном соблюдении досудебного претензионного порядка разрешения споров. Срок рассмотрения
+              претензии составляет&nbsp;10 (десять) календарных дней со&nbsp;дня ее&nbsp;получения Стороной.
+            </p>
+          </li>
+          <li class="list_item-for-form mb-20">
+            <p class="text_descr section-descr text-for-table">
+              Все споры и&nbsp;разногласия, возникающие между Сторонами по&nbsp;настоящему Соглашению или в&nbsp;связи
+              с&nbsp;ним, подлежат разрешению в&nbsp;судебном порядке по&nbsp;месту нахождения истца в&nbsp;соответствии
+              с&nbsp;процессуальным законодательством Российской Федерации.
+            </p>
+          </li>
+          <li class="list_item-for-form mb-20">
+            <p class="text_descr section-descr text-for-table">
+              Настоящее Соглашение представляет собой полную договоренность Сторон по&nbsp;его предмету и&nbsp;заменяет
+              все предыдущие соглашения и&nbsp;договоренности, письменные или устные, по&nbsp;его предмету.
+            </p>
+          </li>
+          <li class="list_item-for-form mb-20">
+            <p class="text_descr section-descr text-for-table">
+              Если судом компетентной юрисдикции будет установлено, что какое-либо положение настоящего Соглашения
+              не&nbsp;подлежит принудительному исполнению или является недействительным, или незаконным, такое положение
+              изымается, а&nbsp;остальная часть настоящего Соглашения продолжает действовать в&nbsp;полную силу.
+            </p>
+          </li>
+          <li class="list_item-for-form mb-20">
+            <p class="text_descr section-descr text-for-table">
+              Настоящее Соглашение также распространяет свое действия на&nbsp;случай получения Конфиденциальной
+              информации Пользователем от&nbsp;фактически или юридически аффилированных с&nbsp;Раскрывающей стороной
+              лиц.
+            </p>
+          </li>
+          <li class="list_item-for-form mb-20">
+            <p class="text_descr section-descr text-for-table">
+              Стороны признают юридическую силу документов, направляемых посредством электронной почты или факсимильной
+              связи, при этом Стороны обязуются направлять друг другу оригиналы документов в&nbsp;течение кратчайшего
+              срока после направления документов с&nbsp;использованием вышеуказанных средств связи. В&nbsp;случае
+              возникновения разночтений между копиями и&nbsp;оригиналами документов преимущественную юридическую силу
+              будут иметь оригиналы документов на&nbsp;бумажном носителе, заверенные подписями и&nbsp;печатями
+              уполномоченных лиц Сторон.
+            </p>
+          </li>
+          <li class="list_item-for-form mb-20">
+            <p class="text_descr section-descr text-for-table">
+              В&nbsp;подтверждение вышеизложенного Стороны подписали настоящее Соглашение в&nbsp;2 (двух) экземплярах,
+              имеющих равную юридическую силу, по&nbsp;1 (одному) для каждой из&nbsp;Сторон.
+            </p>
+          </li>
+        </ol>
+        <p class="text_descr section-descr text-for-table text-bold text-center mb-20">
+          Реквизиты:
+        </p>
+        <div class="table-for-form mb-100">
+          <div class="row-for-table">
+            <p class="text_descr section-descr text-for-table text-bold mb-0">
+              Раскрывающая сторона
+            </p>
+            <p class="text_descr section-descr text-for-table text-bold mb-0">
+              ООО &laquo;Альфатрейд&raquo;
+            </p>
+          </div>
+          <div class="row-for-table row-for-table-2">
+            <p class="text_descr section-descr text-for-table mb-0">
+              ОГРН: 1237800073048
+            </p>
+            <p class="text_descr section-descr text-for-table mb-0">
+              ИНН: 7813673326
+            </p>
+            <p class="text_descr section-descr text-for-table mb-0">
+              Юридический адрес: 197101, г. Санкт-Петербург, Ул.
+            </p>
+            <p class="text_descr section-descr text-for-table mb-0">
+              Большая Монетная, д.&nbsp;16, к.&nbsp;5, Литер. Е
+            </p>
+            <p class="text_descr section-descr text-for-table mb-0">
+              Р/с: 40702810002390005569
+            </p>
+            <p class="text_descr section-descr text-for-table mb-0">
+              в&nbsp;АО&nbsp;&laquo;АЛЬФА-БАНК&raquo;
+            </p>
+            <p class="text_descr section-descr text-for-table mb-0">
+              К/с: 30101810200000000593
+            </p>
+            <p class="text_descr section-descr text-for-table mb-0">
+              К/с: 30101810200000000593
+            </p>
+          </div>
+          <div class="row-for-table">
+            <p class="text_descr section-descr text-for-table text-bold mb-0">
+              Генеральный директор
+            </p>
+            <p class="text_descr section-descr text-for-table text-bold mb-0">
+              ________________ /Гордиенко М.В./
+            </p>
+          </div>
+        </div>
+        <p class="text_descr section-descr text-for-table text-bold text-center mb-20">
+          Политика в&nbsp;отношении обработки персональных данных
+        </p>
+        <p class="text_descr section-descr text-for-table text-bold text-center mb-20">
+          Редакция от&nbsp;10.09.2024&nbsp;г.
+        </p>
+        <ol class="list-for-form text-for-table">
+          <li class="list_item-for-form mb-20">
+            <p class="text_descr section-descr text-for-table mb-20">
+              Общие положения
+            </p>
+            <p class="text_descr section-descr text-for-table mb-20">
+              Настоящая политика в&nbsp;отношении обработки персональных данных составлена в&nbsp;соответствии
+              с&nbsp;требованиями Федерального закона от&nbsp;27.07.2006 &#8470;&nbsp;152-ФЗ &laquo;О&nbsp;персональных
+              данных&raquo; (далее&nbsp;&mdash; &laquo;152-ФЗ&raquo;) и&nbsp;определяет порядок обработки персональных
+              данных и&nbsp;меры по&nbsp;обеспечению безопасности персональных данных Общества с&nbsp;ограниченной
+              ответственностью &laquo;Альфатрейд&raquo; (юр. адрес: 197101, г. Санкт-Петербург, Ул. Большая Монетная,
+              д.&nbsp;16, к.&nbsp;5, Литер. Е , ОГРН: 1237800073048, ИНН: 7813673326 ) (далее&nbsp;&mdash;
+              &laquo;Оператор&raquo;, &laquo;мы&raquo;, &laquo;нас&raquo;, &laquo;нам&raquo;).
+            </p>
+            <p class="text_descr section-descr text-for-table mb-20">
+              Оператор ставит своей важнейшей целью и&nbsp;условием осуществления своей деятельности соблюдение прав
+              и&nbsp;свобод человека и&nbsp;гражданина при обработке его Персональных данных, в&nbsp;том числе защиты
+              прав на&nbsp;неприкосновенность частной жизни, личную и&nbsp;семейную тайну.
+            </p>
+            <p class="text_descr section-descr text-for-table mb-20">
+              Настоящая политика Оператора в&nbsp;отношении обработки Персональных данных (далее&nbsp;&mdash;
+              &laquo;Политика&raquo;) применяется ко&nbsp;всей информации, которую Оператор может получить при посещении
+              веб-сайта <a href="https://plonq.ru/qr-nda-agreement"><span
+                  class="text-bold">https://plonq.ru/qr-nda-agreement</span></a>, а&nbsp;также других сервисов, которые
+              принадлежат или предоставляются Оператором и&nbsp;которые ссылаются на&nbsp;данную Политику.
+            </p>
+          </li>
+          <li class="list_item-for-form mb-20">
+            <p class="text_descr section-descr text-for-table mb-20">
+              Основные понятия, используемые в&nbsp;Политике
+            </p>
+            <p class="text_descr section-descr text-for-table mb-0">
+              Веб-сайт&nbsp;&mdash; совокупность графических и&nbsp;информационных материалов, а&nbsp;также программ для
+              ЭВМ
+              и&nbsp;баз данных, обеспечивающих их&nbsp;доступность в&nbsp;информационно-телекоммуникационной сети
+              &laquo;Интернет&raquo; по&nbsp;веб-адресу: <a href="https://plonq.ru/qr-nda-agreement"><span
+                  class="text-bold">https://plonq.ru/qr-nda-agreement</span></a>;
+              Обработка Персональных данных&nbsp;&mdash; любое действие (операция) или совокупность действий (операций),
+              совершаемых
+              с&nbsp;использованием средств автоматизации или без использования таких средств с&nbsp;Персональными
+              данными, включая
+              сбор, хранение, запись, накопление, систематизация, уточнение (обновление, изменение), передача
+              (предоставление,
+              доступ), удаление, блокирование, уничтожение, извлечение, использование Персональных данных;
+              Оператор&nbsp;&mdash; юридическое или физическое лицо, осуществляющие обработку Персональных данных;
+              Персональные данные&nbsp;&mdash; любая информация, относящаяся прямо или косвенно к&nbsp;вам, или
+              позволяет вас
+              определить;
+            </p>
+            <p class="text_descr section-descr text-for-table mb-20">
+              Пользователь&nbsp;&mdash; дееспособное физическое совершеннолетнее лицо, посетившее Веб-сайт;
+              Cookie-файлы&nbsp;&mdash; данные, которые автоматически передаются Оператору в&nbsp;процессе использования
+              Веб-сайта,
+              в&nbsp;том числе IP-адрес, географическое местоположение, информация о&nbsp;браузере и&nbsp;виде
+              операционной системы
+              устройства Пользователя, технические характеристики оборудования и&nbsp;программного обеспечения,
+              используемых
+              Пользователем, дата и&nbsp;время доступа к&nbsp;Веб-сайту;
+              Применимое законодательство&nbsp;&mdash; материальное право Российской Федерации.
+            </p>
+            <p class="text_descr section-descr text-for-table mb-20">
+              Мы&nbsp;обрабатываем только Персональные данные, которые относятся к&nbsp;категории &laquo;общие
+              персональные данные&raquo; (например, ФИО, номер телефона&nbsp;т.&nbsp;д.) и&nbsp;только в&nbsp;тех
+              случаях, когда:
+            </p>
+            <ul class="second-list mb-20 pl-20">
+              <li class="second-list_item">
+                <p class="text_descr section-descr text-for-table mb-0">
+                  у&nbsp;нас есть ваше согласие на&nbsp;обработку;
+                </p>
+              </li>
+              <li class="second-list_item">
+                <p class="text_descr section-descr text-for-table mb-0">
+                  нам нужны Персональные данные для исполнения наших обязательств перед вами;
+                </p>
+              </li>
+              <li class="second-list_item">
+                <p class="text_descr section-descr text-for-table mb-0">
+                  обработка необходима для соблюдения нами обязательств, установленных Применимым законодательством.
+                </p>
+              </li>
+            </ul>
+            <p class="text_descr section-descr text-for-table mb-20">
+              Если мы&nbsp;просим вас предоставить Персональные данные, мы&nbsp;поясним это и&nbsp;сообщим вам,
+              является&nbsp;ли предоставление Персональных данных обязательным, а&nbsp;также возможные последствия, если
+              вы&nbsp;не&nbsp;предоставите Персональные данные.
+            </p>
+            <p class="text_descr section-descr text-for-table mb-20">
+              Мы&nbsp;не&nbsp;обрабатываем:
+            </p>
+            <ul class="second-list mb-20 pl-20">
+              <li class="second-list_item">
+                <p class="text_descr section-descr text-for-table mb-0">
+                  биометрические Персональные данные (например, дактилоскопия, распознавание по&nbsp;голосу
+                  и&nbsp;т.&nbsp;д.);
+                </p>
+              </li>
+              <li class="second-list_item">
+                <p class="text_descr section-descr text-for-table mb-0">
+                  специальные Персональные данные (например, расовая или национальная принадлежность, политические
+                  взгляды, религиозные или философские убеждения, состояние здоровья и&nbsp;т.&nbsp;д.);
+                </p>
+              </li>
+              <li class="second-list_item">
+                <p class="text_descr section-descr text-for-table mb-0">
+                  Персональные данные лиц, не&nbsp;достигших возраста 18&nbsp;лет
+                </p>
+              </li>
+            </ul>
+            <p class="text_descr section-descr text-for-table mb-20">
+              Если нам станет известно, что мы&nbsp;собрали вышеуказанные Персональные данные,
+              то&nbsp;в&nbsp;зависимости от&nbsp;обстоятельств, мы&nbsp;удалим эту информацию с&nbsp;того момента, как
+              нам станет известно об&nbsp;этом. Если у&nbsp;вас есть основания полагать, что мы&nbsp;собрали такие
+              Персональные данные, немедленно сообщите нам об&nbsp;этом.
+            </p>
+            <p class="text_descr section-descr text-for-table mb-20">
+              Способы обработки Персональных данных
+            </p>
+            <p class="text_descr section-descr text-for-table mb-20">
+              Мы&nbsp;обрабатываем Персональные данные, которые получены нами законным путем и&nbsp;на&nbsp;законных
+              основаниях посредством Веб-сайта, других сервисов, которые принадлежат или предоставляются Оператором
+              и&nbsp;которые ссылаются на&nbsp;данную Политику, а&nbsp;также путем обмена сообщениями между вами
+              и&nbsp;нами с&nbsp;использованием электронной почты&nbsp;и (или) телефона.
+            </p>
+            <p class="text_descr section-descr text-for-table mb-20">
+              Обработка Персональных данных производится с&nbsp;использованием или без использования средств
+              автоматизации, ограничиваясь следующими способами:
+            </p>
+            <ul class="second-list mb-20">
+              <li class="second-list_item">
+                <p class="text_descr section-descr text-for-table mb-0">
+                  сбор
+                </p>
+              </li>
+              <li class="second-list_item">
+                <p class="text_descr section-descr text-for-table mb-0">
+                  хранение
+                </p>
+              </li>
+              <li class="second-list_item">
+                <p class="text_descr section-descr text-for-table mb-0">
+                  запись
+                </p>
+              </li>
+              <li class="second-list_item">
+                <p class="text_descr section-descr text-for-table mb-0">
+                  накопление
+                </p>
+              </li>
+              <li class="second-list_item">
+                <p class="text_descr section-descr text-for-table mb-0">
+                  систематизация
+                </p>
+              </li>
+              <li class="second-list_item">
+                <p class="text_descr section-descr text-for-table mb-0">
+                  уточнение (обновление, изменение)
+                </p>
+              </li>
+              <li class="second-list_item">
+                <p class="text_descr section-descr text-for-table mb-0">
+                  передача (предоставление, доступ)
+                </p>
+              </li>
+              <li class="second-list_item">
+                <p class="text_descr section-descr text-for-table mb-0">
+                  удаление
+                </p>
+              </li>
+              <li class="second-list_item">
+                <p class="text_descr section-descr text-for-table mb-0">
+                  блокирование
+                </p>
+              </li>
+              <li class="second-list_item">
+                <p class="text_descr section-descr text-for-table mb-0">
+                  уничтожение
+                </p>
+              </li>
+              <li class="second-list_item">
+                <p class="text_descr section-descr text-for-table mb-0">
+                  извлечение
+                </p>
+              </li>
+              <li class="second-list_item">
+                <p class="text_descr section-descr text-for-table mb-0">
+                  использование
+                </p>
+              </li>
+            </ul>
+          </li>
+          <li class="list_item-for-form mb-20 table-descr">
+            <p class="text_descr section-descr text-for-table mb-20">
+              Цели обработки Персональных данных
+            </p>
+            <div class="mb-20">
+              <div class="table-overflow">
+                <table class="second-table">
+                  <tr class="tr-table">
+                    <td class="td-table">
+                      <p class="text_descr section-descr table-descr mb-0">
+                        Цели обработки Персональных данных
+                      </p>
+                    </td>
+                    <td class="td-table">
+                      <p class="text_descr section-descr table-descr mb-0">
+                        Категории и&nbsp;перечень обрабатываемых Персональных данных
+                      </p>
+                    </td>
+                    <td class="td-table">
+                      <p class="text_descr section-descr table-descr mb-0">
+                        Категории субъектов Персональных данных
+                      </p>
+                    </td>
+                    <td class="td-table">
+                      <p class="text_descr section-descr table-descr mb-0">
+                        Способы и&nbsp;сроки обработки и&nbsp;хранения Персональных данных
+                      </p>
+                    </td>
+                  </tr>
+                  <tr class="tr-table">
+                    <td class="td-table">
+                      <p class="text_descr section-descr table-descr mb-0">
+                        Установление с&nbsp;Пользователем обратной связи, включая направление уведомлений, запросов,
+                        касающихся использования Веб-сайта, обработку запросов и&nbsp;заявок от&nbsp;Пользователя через
+                        специальное окно онлайн-чата или электронную почту
+                      </p>
+                    </td>
+                    <td class="td-table">
+                      <p class="text_descr section-descr table-descr mb-10">
+                        Категории Персональных данных: общие
+                      </p>
+                      <p class="text_descr section-descr table-descr mb-10">
+                        Обрабатываемые в&nbsp;рамках указанной цели Персональные данные не&nbsp;относятся
+                        к&nbsp;специальным категориям или
+                      </p>
+                      <p class="text_descr section-descr table-descr mb-10">
+                        биометрическим в&nbsp;соответствии со&nbsp;ст.ст. 10-11 152-ФЗ
+                      </p>
+                      <p class="text_descr section-descr table-descr mb-10">
+                        Перечень Персональных данных:
+                      </p>
+                      <p class="text_descr section-descr table-descr mb-10">
+                        фамилия, имя, отчество
+                      </p>
+                      <p class="text_descr section-descr table-descr mb-10">
+                        адрес электронной почты
+                      </p>
+                      <p class="text_descr section-descr table-descr mb-10">
+                        номер телефона
+                      </p>
+                      <p class="text_descr section-descr table-descr mb-10">
+                        дата рождения
+                      </p>
+                      <p class="text_descr section-descr table-descr mb-10">
+                        адрес
+                      </p>
+                      <p class="text_descr section-descr table-descr mb-10">
+                        регион
+                      </p>
+                      <p class="text_descr section-descr table-descr mb-10">
+                        паспортные данные
+                      </p>
+                      <p class="text_descr section-descr table-descr mb-10">
+                        данные банковской карты/счета
+                      </p>
+                      <p class="text_descr section-descr table-descr mb-10">
+                        сведения об&nbsp;аккаунтах в&nbsp;социальных сетях
+                      </p>
+                      <p class="text_descr section-descr table-descr mb-10">
+                        сведения об&nbsp;аккаунтах в&nbsp;Интернет-мессенджерах
+                      </p>
+                      <p class="text_descr section-descr table-descr mb-10">
+                        категория, к&nbsp;которой вы&nbsp;принадлежите (потребитель, поставщик/компания или другое)
+                      </p>
+                      <p class="text_descr section-descr table-descr mb-10">
+                        ИНН
+                      </p>
+                      <p class="text_descr section-descr table-descr mb-0">
+                        данные водительского удостоверения
+                      </p>
+                    </td>
+                    <td class="td-table">
+                      <p class="text_descr section-descr table-descr mb-0">
+                        Пользователи Веб-сайта
+                      </p>
+                    </td>
+                    <td class="td-table">
+                      <p class="text_descr section-descr table-descr mb-10">
+                        Обработка Персональных данных осуществляется с&nbsp;использованием средств автоматизации
+                      </p>
+                      <p class="text_descr section-descr table-descr mb-0">
+                        Срок обработки Персональных данных&nbsp;&mdash; до&nbsp;достижения целей их&nbsp;обработки
+                      </p>
+                    </td>
+                  </tr>
+                  <tr class="tr-table">
+                    <td class="td-table">
+                      <p class="text_descr section-descr table-descr mb-0">
+                        Установление с&nbsp;Пользователем обратной связи для обсуждения потенциального сотрудничества
+                        через форму обратной связи на&nbsp;Веб-сайте
+                      </p>
+                    </td>
+                    <td class="td-table">
+                      <p class="text_descr section-descr table-descr mb-10">
+                        Категории Персональных данных: общие
+                      </p>
+                      <p class="text_descr section-descr table-descr mb-10">
+                        Обрабатываемые в&nbsp;рамках указанной цели Персональные данные не&nbsp;относятся
+                        к&nbsp;специальным категориям или биометрическим в&nbsp;соответствии со&nbsp;ст.ст. 10-11 152-ФЗ
+                      </p>
+                      <p class="text_descr section-descr table-descr mb-10">
+                        Перечень Персональных данных:
+                      </p>
+                      <p class="text_descr section-descr table-descr mb-10">
+                        фамилия, имя, отчество
+                      </p>
+                      <p class="text_descr section-descr table-descr mb-10">
+                        адрес электронной почты
+                      </p>
+                      <p class="text_descr section-descr table-descr mb-10">
+                        номер телефона
+                      </p>
+                      <p class="text_descr section-descr table-descr mb-10">
+                        дата рождения
+                      </p>
+                      <p class="text_descr section-descr table-descr mb-10">
+                        адрес
+                      </p>
+                      <p class="text_descr section-descr table-descr mb-10">
+                        регион
+                      </p>
+                      <p class="text_descr section-descr table-descr mb-0">
+                        категория, к&nbsp;которой вы&nbsp;принадлежите (потребитель, поставщик/компания или другое)
+                      </p>
+                    </td>
+                    <td class="td-table">
+                      <p class="text_descr section-descr table-descr mb-0">
+                        Пользователи Веб-сайта
+                      </p>
+                    </td>
+                    <td class="td-table">
+                      <p class="text_descr section-descr table-descr mb-10">
+                        Обработка Персональных данных осуществляется с использованием средств автоматизации
+                      </p>
+                      <p class="text_descr section-descr table-descr mb-0">
+                        Срок обработки Персональных данных – до достижения целей их обработки
+                      </p>
+                    </td>
+                  </tr>
+                  <tr class="tr-table">
+                    <td class="td-table">
+                      <p class="text_descr section-descr table-descr mb-0">
+                        Предоставление Пользователю поддержки при возникновении проблем, связанных с&nbsp;использованием
+                        Веб-сайта
+                      </p>
+                    </td>
+                    <td class="td-table">
+                      <p class="text_descr section-descr table-descr mb-10">
+                        Категории Персональных данных: общие
+                      </p>
+                      <p class="text_descr section-descr table-descr mb-10">
+                        Обрабатываемые в&nbsp;рамках указанной цели Персональные данные не&nbsp;относятся
+                        к&nbsp;специальным категориям или биометрическим в&nbsp;соответствии со&nbsp;ст.ст. 10-11 152-ФЗ
+                      </p>
+                      <p class="text_descr section-descr table-descr mb-10">
+                        Перечень Персональных данных:
+                      </p>
+                      <p class="text_descr section-descr table-descr mb-10">
+                        фамилия, имя, отчество
+                      </p>
+                      <p class="text_descr section-descr table-descr mb-10">
+                        адрес электронной почты
+                      </p>
+                      <p class="text_descr section-descr table-descr mb-0">
+                        номер телефона
+                      </p>
+                    </td>
+                    <td class="td-table">
+                      <p class="text_descr section-descr table-descr mb-0">
+                        Пользователи Веб-сайта
+                      </p>
+                    </td>
+                    <td class="td-table">
+                      <p class="text_descr section-descr table-descr mb-10">
+                        Обработка Персональных данных осуществляется с использованием средств автоматизации
+                      </p>
+                      <p class="text_descr section-descr table-descr mb-0">
+                        Срок обработки Персональных данных – до достижения целей их обработки
+                      </p>
+                    </td>
+                  </tr>
+                  <tr class="tr-table">
+                    <td class="td-table">
+                      <p class="text_descr section-descr table-descr mb-0">
+                        Подписка на&nbsp;новости Оператора
+                      </p>
+                    </td>
+                    <td class="td-table">
+                      <p class="text_descr section-descr table-descr mb-10">
+                        Категории Персональных данных: общие
+                      </p>
+                      <p class="text_descr section-descr table-descr mb-10">
+                        Обрабатываемые в&nbsp;рамках указанной цели Персональные данные не&nbsp;относятся
+                        к&nbsp;специальным категориям или биометрическим в&nbsp;соответствии со&nbsp;ст.ст. 10-11 152-ФЗ
+                      </p>
+                      <p class="text_descr section-descr table-descr mb-10">
+                        Перечень Персональных данных:
+                      </p>
+                      <p class="text_descr section-descr table-descr mb-10">
+                        фамилия, имя, отчество
+                      </p>
+                      <p class="text_descr section-descr table-descr mb-0">
+                        адрес электронной почты
+                      </p>
+                    </td>
+                    <td class="td-table">
+                      <p class="text_descr section-descr table-descr mb-0">
+                        Пользователи Веб-сайта
+                      </p>
+                    </td>
+                    <td class="td-table">
+                      <p class="text_descr section-descr table-descr mb-10">
+                        Обработка Персональных данных осуществляется с использованием средств автоматизации
+                      </p>
+                      <p class="text_descr section-descr table-descr mb-0">
+                        Срок обработки Персональных данных – до достижения целей их обработки
+                      </p>
+                    </td>
+                  </tr>
+                  <tr class="tr-table">
+                    <td class="td-table">
+                      <p class="text_descr section-descr table-descr mb-0">
+                        Проведение аналитики посещений Веб-сайта
+                      </p>
+                    </td>
+                    <td class="td-table">
+                      <p class="text_descr section-descr table-descr mb-10">
+                        Категории Персональных данных: общие
+                      </p>
+                      <p class="text_descr section-descr table-descr mb-10">
+                        Обрабатываемые в&nbsp;рамках указанной цели Персональные данные не&nbsp;относятся
+                        к&nbsp;специальным категориям или биометрическим в&nbsp;соответствии со&nbsp;ст.ст. 10-11 152-ФЗ
+                      </p>
+                      <p class="text_descr section-descr table-descr mb-10">
+                        Перечень Персональных данных:
+                      </p>
+                      <p class="text_descr section-descr table-descr mb-0">
+                        Cookie-файлы
+                      </p>
+                    </td>
+                    <td class="td-table">
+                      <p class="text_descr section-descr table-descr mb-0">
+                        Пользователи Веб-сайта
+                      </p>
+                    </td>
+                    <td class="td-table">
+                      <p class="text_descr section-descr table-descr mb-10">
+                        Обработка Персональных данных осуществляется с использованием средств автоматизации
+                      </p>
+                      <p class="text_descr section-descr table-descr mb-0">
+                        Срок обработки Персональных данных&nbsp;&mdash; зависит от&nbsp;срока действия Cookie-файлов,
+                        но&nbsp;не&nbsp;превышает 1&nbsp;год. После достижения срока хранения Персональные данные
+                        уничтожаются автоматически
+                      </p>
+                    </td>
+                  </tr>
+                  <tr class="tr-table">
+                    <td class="td-table">
+                      <p class="text_descr section-descr table-descr mb-0">
+                        Обеспечение работы Веб-сайта
+                      </p>
+                    </td>
+                    <td class="td-table">
+                      <p class="text_descr section-descr table-descr mb-10">
+                        Категории Персональных данных: общие
+                      </p>
+                      <p class="text_descr section-descr table-descr mb-10">
+                        Обрабатываемые в&nbsp;рамках указанной цели Персональные данные не&nbsp;относятся
+                        к&nbsp;специальным категориям или биометрическим в&nbsp;соответствии со&nbsp;ст.ст. 10-11 152-ФЗ
+                      </p>
+                      <p class="text_descr section-descr table-descr mb-10">
+                        Перечень Персональных данных:
+                      </p>
+                      <p class="text_descr section-descr table-descr mb-0">
+                        Cookie-файлы
+                      </p>
+                    </td>
+                    <td class="td-table">
+                      <p class="text_descr section-descr table-descr mb-0">
+                        Пользователи Веб-сайта
+                      </p>
+                    </td>
+                    <td class="td-table">
+                      <p class="text_descr section-descr table-descr mb-10">
+                        Обработка Персональных данных осуществляется с использованием средств автоматизации
+                      </p>
+                      <p class="text_descr section-descr table-descr mb-0">
+                        Срок обработки Персональных данных&nbsp;&mdash; зависит от&nbsp;срока действия Cookie-файлов,
+                        но&nbsp;не&nbsp;превышает 1&nbsp;год. После достижения срока хранения Персональные данные
+                        уничтожаются автоматически
+                      </p>
+                    </td>
+                  </tr>
+                  <tr class="tr-table">
+                    <td class="td-table">
+                      <p class="text_descr section-descr table-descr mb-0">
+                        Запрос Оператора на&nbsp;предоставление соискателями резюме на&nbsp;вакантные должности Оператора
+                        посредством направления писем через электронную почту
+                      </p>
+                    </td>
+                    <td class="td-table">
+                      <p class="text_descr section-descr table-descr mb-10">
+                        Категории Персональных данных: общие
+                      </p>
+                      <p class="text_descr section-descr table-descr mb-10">
+                        Обрабатываемые в&nbsp;рамках указанной цели Персональные данные не&nbsp;относятся
+                        к&nbsp;специальным категориям или биометрическим в&nbsp;соответствии со&nbsp;ст.ст. 10-11 152-ФЗ
+                      </p>
+                      <p class="text_descr section-descr table-descr mb-10">
+                        Перечень Персональных данных:
+                      </p>
+                      <p class="text_descr section-descr table-descr mb-10">
+                        фамилия, имя, отчество
+                      </p>
+                      <p class="text_descr section-descr table-descr mb-10">
+                        адрес электронной почты
+                      </p>
+                      <p class="text_descr section-descr table-descr mb-10">
+                        номер телефона
+                      </p>
+                      <p class="text_descr section-descr table-descr mb-0">
+                        резюме/анкета кандидата на&nbsp;трудоустройство (фамилия, имя, отчество, дата рождения, адрес
+                        электронной почты, номер телефона, наименование профессии, гражданство, занимаемая должность,
+                        место работы, пол, сведения об&nbsp;аккаунтах в&nbsp;Интернет-мессенджерах, сведения
+                        об&nbsp;аккаунтах в&nbsp;социальных сетях, фотография)
+                      </p>
+                    </td>
+                    <td class="td-table">
+                      <p class="text_descr section-descr table-descr mb-0">
+                        Соискатели на&nbsp;вакантные должности Оператора
+                      </p>
+                    </td>
+                    <td class="td-table">
+                      <p class="text_descr section-descr table-descr mb-10">
+                        Обработка Персональных данных осуществляется с использованием средств автоматизации
+                      </p>
+                      <p class="text_descr section-descr table-descr mb-0">
+                        Срок обработки Персональных данных&nbsp;&mdash; мы&nbsp;уничтожим Персональные данные
+                        в&nbsp;течение 3&nbsp;месяцев с&nbsp;момента принятия решения об&nbsp;отказе
+                        в&nbsp;трудоустройстве или в&nbsp;течение 30&nbsp;дней с&nbsp;момента получения отзыва согласия
+                        на&nbsp;обработку Персональных данных в&nbsp;соответствии с&nbsp;ч.ч. 4&ndash;5&nbsp;ст.&nbsp;21
+                        152-ФЗ, в&nbsp;зависимости от&nbsp;того, что произойдет раньше. Если будет принято решение
+                        о&nbsp;трудоустройстве, то&nbsp;Персональные данные обрабатываются до&nbsp;прекращения трудовых
+                        отношений
+                      </p>
+                    </td>
+                  </tr>
+                  <tr class="tr-table">
+                    <td class="td-table">
+                      <p class="text_descr section-descr table-descr mb-0">
+                        Деятельность Оператора по&nbsp;организации и&nbsp;проведению торговых процедур через торговые
+                        точки и&nbsp;взаимодействию с&nbsp;контрагентами в&nbsp;рамках сотрудничества
+                      </p>
+                    </td>
+                    <td class="td-table">
+                      <p class="text_descr section-descr table-descr mb-10">
+                        Категории Персональных данных: общие
+                      </p>
+                      <p class="text_descr section-descr table-descr mb-10">
+                        Обрабатываемые в&nbsp;рамках указанной цели Персональные данные не&nbsp;относятся
+                        к&nbsp;специальным категориям или биометрическим в&nbsp;соответствии со&nbsp;ст.ст. 10-11 152-ФЗ
+                      </p>
+                      <p class="text_descr section-descr table-descr mb-10">
+                        Перечень Персональных данных:
+                      </p>
+                      <p class="text_descr section-descr table-descr mb-10">
+                        фамилия, имя, отчество
+                      </p>
+                      <p class="text_descr section-descr table-descr mb-10">
+                        адрес электронной почты
+                      </p>
+                      <p class="text_descr section-descr table-descr mb-10">
+                        номер телефона
+                      </p>
+                      <p class="text_descr section-descr table-descr mb-10">
+                        дата рождения
+                      </p>
+                      <p class="text_descr section-descr table-descr mb-10">
+                        регион
+                      </p>
+                      <p class="text_descr section-descr table-descr mb-10">
+                        сведения об&nbsp;аккаунтах в&nbsp;социальных сетях
+                      </p>
+                      <p class="text_descr section-descr table-descr mb-10">
+                        сведения об&nbsp;аккаунтах в&nbsp;Интернет-мессенджерах
+                      </p>
+                      <p class="text_descr section-descr table-descr mb-0">
+                        занимаемая должность
+                      </p>
+                    </td>
+                    <td class="td-table">
+                      <p class="text_descr section-descr table-descr mb-0">
+                        Контрагенты Оператора
+                      </p>
+                    </td>
+                    <td class="td-table">
+                      <p class="text_descr section-descr table-descr mb-10">
+                        Обработка Персональных данных осуществляется с использованием средств автоматизации
+                      </p>
+                      <p class="text_descr section-descr table-descr mb-0">
+                        Срок обработки Персональных данных – до достижения целей их обработки
+                      </p>
+                    </td>
+                  </tr>
+                  <tr class="tr-table">
+                    <td class="td-table">
+                      <p class="text_descr section-descr table-descr mb-0">
+                        Обработка обращений с&nbsp;использованием help desk платформы Юздеск
+                      </p>
+                    </td>
+                    <td class="td-table">
+                      <p class="text_descr section-descr table-descr mb-10">
+                        Категории Персональных данных: общие
+                      </p>
+                      <p class="text_descr section-descr table-descr mb-10">
+                        Обрабатываемые в&nbsp;рамках указанной цели Персональные данные не&nbsp;относятся
+                        к&nbsp;специальным категориям или биометрическим в&nbsp;соответствии со&nbsp;ст.ст. 10-11 152-ФЗ
+                      </p>
+                      <p class="text_descr section-descr table-descr mb-10">
+                        Перечень Персональных данных:
+                      </p>
+                      <p class="text_descr section-descr table-descr mb-10">
+                        фамилия, имя, отчество
+                      </p>
+                      <p class="text_descr section-descr table-descr mb-10">
+                        адрес электронной почты
+                      </p>
+                      <p class="text_descr section-descr table-descr mb-10">
+                        номер телефона
+                      </p>
+                      <p class="text_descr section-descr table-descr mb-10">
+                        дата рождения
+                      </p>
+                      <p class="text_descr section-descr table-descr mb-10">
+                        адрес
+                      </p>
+                      <p class="text_descr section-descr table-descr mb-10">
+                        регион
+                      </p>
+                      <p class="text_descr section-descr table-descr mb-10">
+                        паспортные данные
+                      </p>
+                      <p class="text_descr section-descr table-descr mb-10">
+                        данные банковской карты/счета
+                      </p>
+                      <p class="text_descr section-descr table-descr mb-10">
+                        сведения об&nbsp;аккаунтах в&nbsp;социальных сетях
+                      </p>
+                      <p class="text_descr section-descr table-descr mb-10">
+                        сведения об&nbsp;аккаунтах в&nbsp;Интернет-мессенджерах
+                      </p>
+                      <p class="text_descr section-descr table-descr mb-10">
+                        категория, к&nbsp;которой вы&nbsp;принадлежите (потребитель, поставщик/компания или другое)
+                      </p>
+                      <p class="text_descr section-descr table-descr mb-10">
+                        ИНН
+                      </p>
+                      <p class="text_descr section-descr table-descr mb-0">
+                        данные водительского удостоверения
+                      </p>
+                    </td>
+                    <td class="td-table">
+                      <p class="text_descr section-descr table-descr mb-0">
+                        Пользователи Веб-сайта
+                      </p>
+                    </td>
+                    <td class="td-table">
+                      <p class="text_descr section-descr table-descr mb-10">
+                        Обработка Персональных данных осуществляется с использованием средств автоматизации
+                      </p>
+                      <p class="text_descr section-descr table-descr mb-0">
+                        Срок обработки Персональных данных – до достижения целей их обработки
+                      </p>
+                    </td>
+                  </tr>
+                  <tr class="tr-table">
+                    <td class="td-table">
+                      <p class="text_descr section-descr table-descr mb-0">
+                        Предоставление продуктов и&nbsp;услуг клиентам, включая взаимодействие по&nbsp;вопросам
+                        предоставления и&nbsp;сопровождения продуктов и&nbsp;услуг Оператора
+                      </p>
+                    </td>
+                    <td class="td-table">
+                      <p class="text_descr section-descr table-descr mb-10">
+                        Категории Персональных данных: общие
+                      </p>
+                      <p class="text_descr section-descr table-descr mb-10">
+                        Обрабатываемые в&nbsp;рамках указанной цели Персональные данные не&nbsp;относятся
+                        к&nbsp;специальным категориям или биометрическим в&nbsp;соответствии со&nbsp;ст.ст. 10-11 152-ФЗ
+                      </p>
+                      <p class="text_descr section-descr table-descr mb-10">
+                        Перечень Персональных данных:
+                      </p>
+                      <p class="text_descr section-descr table-descr mb-10">
+                        фамилия, имя, отчество
+                      </p>
+                      <p class="text_descr section-descr table-descr mb-10">
+                        адрес электронной почты
+                      </p>
+                      <p class="text_descr section-descr table-descr mb-10">
+                        номер телефона
+                      </p>
+                      <p class="text_descr section-descr table-descr mb-10">
+                        дата рождения
+                      </p>
+                      <p class="text_descr section-descr table-descr mb-10">
+                        регион
+                      </p>
+                      <p class="text_descr section-descr table-descr mb-10">
+                        паспортные данные
+                      </p>
+                      <p class="text_descr section-descr table-descr mb-10">
+                        сведения об&nbsp;аккаунтах в&nbsp;социальных сетях
+                      </p>
+                      <p class="text_descr section-descr table-descr mb-0">
+                        сведения об&nbsp;аккаунтах в&nbsp;Интернет-мессенджерах
+                      </p>
+                    </td>
+                    <td class="td-table">
+                      <p class="text_descr section-descr table-descr mb-0">
+                        Контрагенты Оператора, потребители
+                      </p>
+                    </td>
+                    <td class="td-table">
+                      <p class="text_descr section-descr table-descr mb-10">
+                        Обработка Персональных данных осуществляется с использованием средств автоматизации
+                      </p>
+                      <p class="text_descr section-descr table-descr mb-0">
+                        Срок обработки Персональных данных – до достижения целей их обработки
+                      </p>
+                    </td>
+                  </tr>
+                  <tr class="tr-table">
+                    <td class="td-table">
+                      <p class="text_descr section-descr table-descr mb-0">
+                        Проведение опросов, связанных с&nbsp;использованием продуктов и&nbsp;услуг Оператора
+                      </p>
+                    </td>
+                    <td class="td-table">
+                      <p class="text_descr section-descr table-descr mb-10">
+                        Категории Персональных данных: общие
+                      </p>
+                      <p class="text_descr section-descr table-descr mb-10">
+                        Обрабатываемые в&nbsp;рамках указанной цели Персональные данные не&nbsp;относятся
+                        к&nbsp;специальным категориям или биометрическим в&nbsp;соответствии со&nbsp;ст.ст. 10-11 152-ФЗ
+                      </p>
+                      <p class="text_descr section-descr table-descr mb-10">
+                        Перечень Персональных данных:
+                      </p>
+                      <p class="text_descr section-descr table-descr mb-10">
+                        адрес
+                      </p>
+                      <p class="text_descr section-descr table-descr mb-10">
+                        пол
+                      </p>
+                      <p class="text_descr section-descr table-descr mb-10">
+                        возраст
+                      </p>
+                      <p class="text_descr section-descr table-descr mb-0">
+                        уровень дохода
+                      </p>
+                    </td>
+                    <td class="td-table">
+                      <p class="text_descr section-descr table-descr mb-0">
+                        Пользователи Веб-сайта, контрагенты Оператора, потребители
+                      </p>
+                    </td>
+                    <td class="td-table">
+                      <p class="text_descr section-descr table-descr mb-10">
+                        Обработка Персональных данных осуществляется с использованием средств автоматизации
+                      </p>
+                      <p class="text_descr section-descr table-descr mb-0">
+                        Срок обработки Персональных данных – до достижения целей их обработки
+                      </p>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+            <p class="text_descr section-descr text-for-table mb-20">
+              Аналитика посещений нашего Веб-сайта
+              Мы&nbsp;хотим, чтобы вы&nbsp;могли использовать наш Веб-сайт так, как мы&nbsp;его задумали. Поэтому для
+              его корректной
+              работы мы&nbsp;используем Cookie-файлы, которые собираются в&nbsp;отношении Пользователей.
+            </p>
+            <p class="text_descr section-descr text-for-table mb-20">
+              Что такое Cookie-файлы? Это небольшие файлы, обычно состоящие из&nbsp;букв и&nbsp;цифр, загружаемые
+              на&nbsp;устройство, когда вы&nbsp;обращаетесь к&nbsp;определенным веб-сайтам. Они позволяют Веб-сайту
+              распознавать ваше устройство и&nbsp;отображать наш Веб-сайт в&nbsp;соответствии с&nbsp;вашими
+              предпочтениями.
+            </p>
+            <p class="text_descr section-descr text-for-table mb-20">
+              Какие Cookie-файлы мы&nbsp;используем:
+            </p>
+            <div class="mb-20">
+              <div class="table-overflow">
+                <table class="second-table">
+                  <tr class="tr-table">
+                    <td class="td-table">
+                      <p class="text_descr section-descr table-descr mb-0">
+                        Наименование
+                      </p>
+                    </td>
+                    <td class="td-table">
+                      <p class="text_descr section-descr table-descr mb-0">
+                        Провайдер
+                      </p>
+                    </td>
+                    <td class="td-table">
+                      <p class="text_descr section-descr table-descr mb-0">
+                        Срок хранения
+                      </p>
+                    </td>
+                    <td class="td-table">
+                      <p class="text_descr section-descr table-descr mb-0">
+                        Описание
+                      </p>
+                    </td>
+                  </tr>
+                  <tr class="tr-table">
+                    <td class="td-table">
+                      <p class="text_descr section-descr table-descr mb-0">
+                        mindboxDeviceUUID
+                      </p>
+                    </td>
+                    <td class="td-table">
+                      <p class="text_descr section-descr table-descr mb-0">
+                        Mindbox
+                      </p>
+                    </td>
+                    <td class="td-table">
+                      <p class="text_descr section-descr table-descr mb-0">
+                        1 год
+                      </p>
+                    </td>
+                    <td class="td-table">
+                      <p class="text_descr section-descr table-descr mb-10">
+                        Позволяют отследить начало и&nbsp;окончание сессии, запустить сценарий по&nbsp;этим событиям
+                      </p>
+                      <p class="text_descr section-descr table-descr mb-0">
+                        Позволяют отследить действия Пользователя на&nbsp;Веб-сайте без передачи его&nbsp;ID: фиксировать
+                        анонимные действия Пользователя
+                      </p>
+                    </td>
+                  </tr>
+                  <tr class="tr-table">
+                    <td class="td-table">
+                      <p class="text_descr section-descr table-descr mb-0">
+                        _ym_isad
+                      </p>
+                    </td>
+                    <td class="td-table">
+                      <p class="text_descr section-descr table-descr mb-0">
+                        Yandex Metrica
+                      </p>
+                    </td>
+                    <td class="td-table">
+                      <p class="text_descr section-descr table-descr mb-0">
+                        2 дня
+                      </p>
+                    </td>
+                    <td class="td-table">
+                      <p class="text_descr section-descr table-descr mb-0">
+                        Используются для определения наличия у&nbsp;Пользователей блокировщиков рекламы
+                      </p>
+                    </td>
+                  </tr>
+                  <tr class="tr-table">
+                    <td class="td-table">
+                      <p class="text_descr section-descr table-descr mb-0">
+                        _ym_d
+                      </p>
+                    </td>
+                    <td class="td-table">
+                      <p class="text_descr section-descr table-descr mb-0">
+                        Yandex Metrica
+                      </p>
+                    </td>
+                    <td class="td-table">
+                      <p class="text_descr section-descr table-descr mb-0">
+                        1 год
+                      </p>
+                    </td>
+                    <td class="td-table">
+                      <p class="text_descr section-descr table-descr mb-0">
+                        Хранит дату первого визита Пользователя на&nbsp;Веб-сайт
+                      </p>
+                    </td>
+                  </tr>
+                  <tr class="tr-table">
+                    <td class="td-table">
+                      <p class="text_descr section-descr table-descr mb-0">
+                        ym_uid
+                      </p>
+                    </td>
+                    <td class="td-table">
+                      <p class="text_descr section-descr table-descr mb-0">
+                        Yandex Metrica
+                      </p>
+                    </td>
+                    <td class="td-table">
+                      <p class="text_descr section-descr table-descr mb-0">
+                        1 год
+                      </p>
+                    </td>
+                    <td class="td-table">
+                      <p class="text_descr section-descr table-descr mb-0">
+                        Позволяет различать Пользователей
+                      </p>
+                    </td>
+                  </tr>
+                  <tr class="tr-table">
+                    <td class="td-table">
+                      <p class="text_descr section-descr table-descr mb-0">
+                        _ym_visorc
+                      </p>
+                    </td>
+                    <td class="td-table">
+                      <p class="text_descr section-descr table-descr mb-0">
+                        Yandex Metrica
+                      </p>
+                    </td>
+                    <td class="td-table">
+                      <p class="text_descr section-descr table-descr mb-0">
+                        30 минут
+                      </p>
+                    </td>
+                    <td class="td-table">
+                      <p class="text_descr section-descr table-descr mb-0">
+                        Используется для корректной работы Вебвизора
+                      </p>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+            <p class="text_descr section-descr text-for-table mb-20">
+              Данные, собираемые с&nbsp;помощью Cookie-файлов, не&nbsp;относятся к&nbsp;специальным категориям или
+              биометрическим в&nbsp;соответствии со&nbsp;ст.ст. 10&ndash;11 152-ФЗ и&nbsp;обрабатываются
+              автоматизированным способом.
+            </p>
+            <p class="text_descr section-descr text-for-table mb-20">
+              Основанием для обработки ваших данных в&nbsp;этом случае будет согласие на&nbsp;обработку Персональных
+              данных, предоставляемое Пользователем Веб-сайта путем совершения конклюдентных действий&nbsp;&mdash;
+              продолжение использования Веб-сайта.
+            </p>
+            <p class="text_descr section-descr text-for-table mb-20">
+              По&nbsp;достижении указанных сроков обработки Персональные данные уничтожаются путем удаления
+              из&nbsp;информационных систем с&nbsp;помощью встроенных средств информационной системы.
+            </p>
+            <p class="text_descr section-descr text-for-table mb-20">
+              Если вы&nbsp;не&nbsp;хотите, чтобы мы&nbsp;собирали ваши данные с&nbsp;помощью Cookie-файлов
+              вы&nbsp;можете отключить их&nbsp;сбор в&nbsp;настройках своего браузера. Прочитать об&nbsp;этом подробнее
+              можно по&nbsp;ссылкам: Яндекс.Браузер, Mozilla Firefox, Google Chrome.
+            </p>
+          </li>
+          <li class="list_item-for-form mb-20">
+            <p class="text_descr section-descr text-for-table mb-20">
+              Правовые основания обработки Персональных данных
+            </p>
+            <p class="text_descr section-descr text-for-table mb-20">
+              Правовым основанием обработки Персональных данных является совокупность нормативных правовых актов,
+              во&nbsp;исполнение которых и&nbsp;в&nbsp;соответствии с&nbsp;которыми Оператор осуществляет обработку
+              Персональных данных, в&nbsp;том числе, но&nbsp;не&nbsp;ограничиваясь: Конституция Российской Федерации,
+              Гражданский кодекс Российской Федерации, Налоговый Кодекс Российской Федерации, иные нормативные правовые
+              акты, регулирующие отношения, связанные с&nbsp;деятельностью Оператора. Правовым основанием обработки
+              Персональных данных также является согласие субъектов Персональных данных на&nbsp;обработку
+              их&nbsp;Персональных данных.
+            </p>
+            <p class="text_descr section-descr text-for-table mb-20">
+              Ваши права в&nbsp;отношении обработки Персональных данных
+            </p>
+            <p class="text_descr section-descr text-for-table mb-20">
+              В&nbsp;случае, если это предусмотрено Применимым законодательством, вы&nbsp;имеете следующие права
+              в&nbsp;отношении ваших Персональных данных:
+            </p>
+            <ol class="mb-20 text-for-table">
+              <li>
+                <p class="text_descr section-descr text-for-table mb-0">
+                  На&nbsp;доступ к&nbsp;Персональным данным;
+                </p>
+              </li>
+              <li>
+                <p class="text_descr section-descr text-for-table mb-0">
+                  На&nbsp;уточнение Персональных данных;
+                </p>
+              </li>
+              <li>
+                <p class="text_descr section-descr text-for-table mb-0">
+                  На&nbsp;блокирование и&nbsp;удаление Персональных данных;
+                </p>
+              </li>
+              <li>
+                <p class="text_descr section-descr text-for-table mb-0">
+                  На&nbsp;обжалование наших действий или нашего бездействия;
+                </p>
+              </li>
+              <li>
+                <p class="text_descr section-descr text-for-table mb-0">
+                  На&nbsp;обжалование решений, принятых на&nbsp;основании исключительно автоматизированной обработки
+                  Персональных данных;
+                </p>
+              </li>
+              <li>
+                <p class="text_descr section-descr text-for-table mb-0">
+                  На&nbsp;отзыв согласия на&nbsp;обработку Персональных данных.
+                </p>
+              </li>
+            </ol>
+            <p class="text_descr section-descr text-for-table mb-20">
+              Перед обработкой любого запроса мы&nbsp;можем запросить дополнительную информацию, чтобы подтвердить вашу
+              личность. Там, где это разрешено Применимым законодательством, мы&nbsp;можем отклонить необоснованные или
+              неуместные запросы.
+            </p>
+          </li>
+          <li class="mb-20">
+            <p class="text_descr section-descr text-for-table mb-20">
+              Безопасность Персональных данных
+            </p>
+            <p class="text_descr section-descr text-for-table mb-20">
+              Безопасность Персональных данных, которые обрабатываются Оператором, обеспечивается путем реализации
+              правовых, организационных и&nbsp;технических мер, необходимых для выполнения в&nbsp;полном объеме
+              требований Применимого законодательства в&nbsp;области защиты Персональных данных.
+            </p>
+            <p class="text_descr section-descr text-for-table mb-20">
+              Оператор обеспечивает сохранность Персональных данных и&nbsp;принимает все возможные меры, исключающие
+              доступ к&nbsp;Персональным данным неуполномоченных лиц.
+            </p>
+            <p class="text_descr section-descr text-for-table mb-20">
+              Также время от&nbsp;времени мы&nbsp;получаем запросы от&nbsp;национальных&nbsp;/ иностранных должностных
+              лиц и&nbsp;государственных органов на&nbsp;предоставление Персональных данных. В&nbsp;таких ситуациях
+              мы&nbsp;можем предоставить Персональные данные, но&nbsp;только в&nbsp;том случае, если добросовестно
+              полагаем, что эти лица действительно вправе направлять такой запрос и&nbsp;получать Персональные данные.
+            </p>
+            <p class="text_descr section-descr text-for-table mb-20">
+              В&nbsp;любом случае мы&nbsp;внимательно рассматриваем все запросы и&nbsp;можем отказать
+              в&nbsp;удовлетворении запроса, если он&nbsp;составлен в&nbsp;слишком общих терминах, без указания
+              основания или с&nbsp;нарушением норм Применимого законодательства.
+            </p>
+            <p class="text_descr section-descr text-for-table mb-20">
+              В&nbsp;случае выявления неточностей в&nbsp;Персональных данных Пользователь может актуализировать
+              их&nbsp;самостоятельно, путем направления Оператору уведомление на&nbsp;адрес электронной почты Оператора
+              <a href="mailto:privacy@plonq.ru"><span class="text-bold">privacy@plonq.ru</span></a> с&nbsp;пометкой
+              &laquo;Актуализация персональных данных&raquo;.
+            </p>
+            <p class="text_descr section-descr text-for-table mb-20">
+              Пользователь может в&nbsp;любой момент отозвать свое согласие на&nbsp;обработку Персональных данных,
+              направив Оператору уведомление посредством электронной почты на&nbsp;адрес электронный почты Оператора <a
+                href="mailto:privacy@plonq.ru"><span class="text-bold">privacy@plonq.ru</span></a> с&nbsp;пометкой
+              &laquo;Отзыв согласия на&nbsp;обработку персональных данных&raquo;
+            </p>
+            <p class="text_descr section-descr text-for-table mb-20">
+              Передача Персональных данных третьим лицам
+            </p>
+            <p class="text_descr section-descr text-for-table mb-20">
+              В&nbsp;целях функционирования деятельности Оператора, а&nbsp;также в&nbsp;целях обеспечения работы
+              Веб-сайта, мы&nbsp;передаем информацию о&nbsp;вас следующим третьим лицам:
+            </p>
+            <div class="mb-20">
+              <div class="table-overflow">
+                <table class="second-table">
+                  <tr class="tr-table">
+                    <td class="td-table">
+                      <p class="text_descr section-descr table-descr mb-0">
+                        Цели обработки Персональных данных
+                      </p>
+                    </td>
+                    <td class="td-table">
+                      <p class="text_descr section-descr table-descr mb-0">
+                        Третьи лица, их&nbsp;наименование и&nbsp;ссылка на&nbsp;политику конфиденциальности/веб-сайт, если
+                        это применимо
+                      </p>
+                    </td>
+                    <td class="td-table">
+                      <p class="text_descr section-descr table-descr mb-0">
+                        Цель передачи
+                      </p>
+                    </td>
+                    <td class="td-table">
+                      <p class="text_descr section-descr table-descr mb-0">
+                        Адрес третьего лица
+                      </p>
+                    </td>
+                  </tr>
+                  <tr class="tr-table">
+                    <td class="td-table">
+                      <p class="text_descr section-descr table-descr mb-0">
+                        Сбор веб-аналитики
+                      </p>
+                    </td>
+                    <td class="td-table">
+                      <p class="text_descr section-descr table-descr mb-10">
+                        ООО «Яндекс» (Россия)
+                      </p>
+                      <p class="text_descr section-descr table-descr mb-0">
+                        Политика конфиденциальности
+                      </p>
+                    </td>
+                    <td class="td-table">
+                      <p class="text_descr section-descr table-descr mb-0">
+                        Провайдер услуг веб-аналитики (Яндекс Метрика)
+                      </p>
+                    </td>
+                    <td class="td-table">
+                      <p class="text_descr section-descr table-descr mb-0">
+                        119021, г. Москва, ул. Льва Толстого, д.&nbsp;16
+                      </p>
+                    </td>
+                  </tr>
+                  <tr class="tr-table">
+                    <td class="td-table">
+                      <p class="text_descr section-descr table-descr mb-0">
+                        Обработка обращений
+                      </p>
+                    </td>
+                    <td class="td-table">
+                      <p class="text_descr section-descr table-descr mb-10">
+                        ООО «Ближе к делу»
+                      </p>
+                      <p class="text_descr section-descr table-descr mb-0">
+                        Политика конфиденциальности
+                      </p>
+                    </td>
+                    <td class="td-table">
+                      <p class="text_descr section-descr table-descr mb-0">
+                        Поступление обращений и&nbsp;предоставление ответа на&nbsp;обращения с&nbsp;использованием help
+                        desk платформы Юздеск
+                      </p>
+                    </td>
+                    <td class="td-table">
+                      <p class="text_descr section-descr table-descr mb-0">
+                        121205, г. Москва, Территория Инновационного центра Сколково, ул. Нобеля, д.&nbsp;5, эт.&nbsp;2,
+                        пом.&nbsp;1, раб.&nbsp;3
+                      </p>
+                    </td>
+                  </tr>
+                  <tr class="tr-table">
+                    <td class="td-table">
+                      <p class="text_descr section-descr table-descr mb-0">
+                        Новостная рассылка
+                      </p>
+                    </td>
+                    <td class="td-table">
+                      <p class="text_descr section-descr table-descr mb-10">
+                        ООО «Майндбокс»
+                      </p>
+                      <p class="text_descr section-descr table-descr mb-0">
+                        Политика конфиденциальности
+                      </p>
+                    </td>
+                    <td class="td-table">
+                      <p class="text_descr section-descr table-descr mb-0">
+                        Осуществление рассылок с&nbsp;помощью сервиса Mindbox
+                      </p>
+                    </td>
+                    <td class="td-table">
+                      <p class="text_descr section-descr table-descr mb-0">
+                        125124, г. Москва, ул. Правды, д.&nbsp;26. Бизнес-центр &laquo;Северное Сияние&raquo;,
+                        этаж&nbsp;12, офис Mindbox
+                      </p>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+            <p class="text_descr section-descr text-for-table mb-20">
+              Как мы&nbsp;защищаем ваши Персональные данные?
+            </p>
+            <p class="text_descr section-descr text-for-table mb-20">
+              Безопасность ваших Персональных данных&nbsp;&mdash; наш приоритет, поэтому мы&nbsp;их&nbsp;надежно
+              защищаем. Если ваши данные будут под угрозой&nbsp;&mdash; мы&nbsp;обязательно сообщим об&nbsp;этом
+              и&nbsp;расскажем, что делать.
+            </p>
+            <p class="text_descr section-descr text-for-table mb-20">
+              Мы&nbsp;применяем различные меры для защиты сбора, передачи и&nbsp;хранения Персональных данных
+              и&nbsp;делаем все возможное, чтобы обезопасить вас от&nbsp;несанкционированных попыток доступа, изменения,
+              раскрытия или уничтожения хранящихся у&nbsp;нас Персональных данных. Однако, ни&nbsp;одна мера
+              безопасности не&nbsp;является идеальной на&nbsp;100%.
+            </p>
+            <p class="text_descr section-descr text-for-table mb-20">
+              Для защиты Персональных данных&nbsp;мы:
+            </p>
+            <ul class="mb-20">
+              <li>
+                <p class="text_descr section-descr text-for-table mb-0">
+                  используем физические, электронные и&nbsp;процедурные средства защиты в&nbsp;соответствии
+                  с&nbsp;международными стандартами;
+                </p>
+              </li>
+              <li>
+                <p class="text_descr section-descr text-for-table mb-0">
+                  используем шифрование для обеспечения конфиденциальности Персональных данных;
+                </p>
+              </li>
+              <li>
+                <p class="text_descr section-descr text-for-table mb-0">
+                  проверяем и&nbsp;обновляем наши методы обработки Персональных данных, включая меры физической
+                  безопасности для предотвращения несанкционированного доступа к&nbsp;нашим системам;
+                </p>
+              </li>
+              <li>
+                <p class="text_descr section-descr text-for-table mb-0">
+                  ограничиваем доступ к&nbsp;Персональным данным для наших сотрудников. Любой, кто имеет такой доступ,
+                  имеет соответствующую квалификацию, подчиняется строгим договорным обязательствам в&nbsp;отношении
+                  конфиденциальности и&nbsp;может быть подвергнут ответственности, в&nbsp;том числе дисциплинарному
+                  взысканию, если он&nbsp;не&nbsp;выполняет подобные обязательства.
+                </p>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <p class="text_descr section-descr text-for-table mb-20">
+              Условия Политики распространяются на&nbsp;обработку Персональных данных, получаемых нами через Веб-сайт
+              и/или другие сервисы, которые принадлежат или предоставляются нам и&nbsp;которые ссылаются на&nbsp;данную
+              Политику.
+            </p>
+            <p class="text_descr section-descr text-for-table mb-20">
+              Обращаем внимание, что Политика не&nbsp;касается некоторых сервисов, в&nbsp;которых действует собственная
+              политика конфиденциальности, не&nbsp;включающая в&nbsp;себя этот документ.
+            </p>
+            <p class="text_descr section-descr text-for-table mb-20">
+              Пользователь может получить любые разъяснения по&nbsp;интересующим вопросам, касающимся обработки его
+              Персональных данных, в&nbsp;том числе, отозвать согласие на&nbsp;обработку Персональных данных,
+              обратившись к&nbsp;Оператору с&nbsp;помощью электронной почты <a href="mailto:privacy@plonq.ru"><span
+                  class="text-bold">privacy@plonq.ru</span></a>.
+            </p>
+            <p class="text_descr section-descr text-for-table mb-20">
+              Мы&nbsp;можем обновлять Политику время от&nbsp;времени. Мы&nbsp;сообщим вам о&nbsp;наиболее существенных
+              изменениях до&nbsp;вступления их&nbsp;в&nbsp;силу. Дальнейшее использование вами Веб-сайта означает, что
+              вы&nbsp;принимаете все изменения. В&nbsp;данном документе будут отражены любые изменения политики
+              в&nbsp;отношении обработки Персональных данных Оператором. Политика действует бессрочно до&nbsp;замены
+              ее&nbsp;новой версией.
+            </p>
+            <p class="text_descr section-descr text-for-table mb-20">
+              Актуальная версия Политики в&nbsp;свободном доступе расположена в&nbsp;информационно-телекоммуникационная
+              сети &laquo;Интернет&raquo; по&nbsp;веб-адресу: <a href="https://plonq.ru/qr-nda-agreement"><span
+                  class="text-bold">https://plonq.ru/qr-nda-agreement</span></a>
+            </p>
+          </li>
+        </ol>
+      </div>
+      <div class="form_content">
+        <form action="" enctype="multipart/form-data" class="form-content" method="POST" id="form" target="_blank">
+          <ul class="list-reset form_list">
+            <li class="form_item">
+              <label class="form_label" for="phone">Телефон</label>
+              <input class="form_input" type="tel" name="phone" placeholder="+7 (916) _ _ _ &ndash; _ _ &ndash; _ _"
+                id="phone" maxlength="25" required pattern="\+?[0-9\s\-\(\)]+">
+            </li>
+            <li class="form_item">
+              <label class="form_label" for="fullName">ФИО</label>
+              <input class="form_input" type="text" name="fullName" placeholder="Иванов Иван Ианович" id="name" min="10"
+                maxlength="100" required>
+            </li>
+            <div class="block_date">
+              <li class="form_item block_date-item">
+                <label class="form_label" for="birthDate">Дата рождения</label>
+                <input class="form_input" type="date" name="birthDate" placeholder="дд.мм.гггг" id="age" required>
+              </li>
+              <li class="form_item block_date-item">
+                <label class="form_label" for="passportSeriesAndNumber">Серия и номер паспорта</label>
+                <input class="form_input mask-for-input" type="text" name="passportSeriesAndNumber"
+                  placeholder="2111 567834" maxlength="11" id="pasport-series" required>
+              </li>
+              <li class="form_item block_date-item">
+                <label class="form_label" for="issuedBy">Место выдачи</label>
+                <input class="form_input" type="text" name="issuedBy" placeholder="УФМС по Московской обл."
+                  id="pasport-place" max="125" required>
+              </li>
+              <li class="form_item block_date-item">
+                <label class="form_label" for="issuedDate">Дата выдачи</label>
+                <input class="form_input" type="date" name="issuedDate" placeholder="дд.мм.гггг" id="pasport-date"
+                  required>
+              </li>
+            </div>
+            <li class="form_item">
+              <label class="form_label" for="registrationAddress">Место жительства по паспорту</label>
+              <input class="form_input" type="text" name="registrationAddress"
+                placeholder="г.Москва, ул. Зеленый пр-кт, 63, кв.15." id="pasport-home" min="8" max="100" required>
+            </li>
+            <li class="form_item form_item-img">
+              <label class="form_label" for="documentPhoto">Фото с документом в анфас</label>
+              <label class="label-for-img image-container" for="documentPhoto">
+                <img id="img" class="img-for-form" src="https://cdn.prod.website-files.com/65eecf07681bcff4508b76b1/6781136272f1ec1571d22597_icon_upload-img.svg" alt="documentPhoto">
+                <input class="input-for-img" type="file" id="documentPhoto" name="documentPhoto"
+                  accept="image/png, image/jpeg" required />
+              </label>
+            </li>
+          </ul>
+          <div class="block-text mb-20">
+            <p class="text_descr section-descr">
+              Нажимая кнопку &laquo;Принять&raquo;, я&nbsp;подтверждаю, что ознакомлен с&nbsp;Соглашением
+              о&nbsp;неразглашении конфиденциальной информациии и&nbsp;Политикой в&nbsp;отношении обработки персональных
+              данных и&nbsp;согласен со&nbsp;всеми условиями, приведенными в&nbsp;данных документах.
+            </p>
+          </div>
+          <div class="form_button">
+            <button type="submit" class="btn btn-reset">
+              Принять
+            </button>
+            <button id="cliner" type="reset" class="btn btn-reset">
+              Отклонить
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/gh/cferdinandi/bouncer/dist/bouncer.polyfills.min.js"></script>
+  <script src="./css/inputmask.min.js"></script>
+  <script>
+    const validate = new Bouncer('#form', {
+      messages: {
+        missingValue: {
+          default: 'Ошибка'
+        },
+        patternMismatch: {
+          email: 'Ошибка',
+          number: 'Ошибка',
+          date: 'Ошибка',
+          default: 'Ошибка'
+        },
+        outOfRange: {
+          over: 'Ошибка',
+          under: 'Ошибка'
+        },
+        wrongLength: {
+          over: 'Ошибка',
+          under: 'Ошибка'
+        }
+      }
+    });
+
+    const image = document.getElementById('img'),
+      cliner = document.getElementById('cliner'),
+      loader = document.getElementById('loader'),
+      input = document.getElementById('documentPhoto');
+    input.addEventListener("change", () => {
+      image.src = URL.createObjectURL(input.files[0]);
+    });
+    cliner.addEventListener('click', () => {
+      image.setAttribute('src', './img/Photo Fields.svg');
+    });
+
+    let selector = document.querySelectorAll('input[type="tel"]');
+    let im = new Inputmask('+7 (999) 999-99-99');
+    im.mask(selector);
+
+    let selector2 = document.querySelector('input[type="tel"]');
+
+    selector2.addEventListener('input', function () {
+      console.log(selector2.value)
+
+
+      const re = /^\d*(\.\d+)?$/
+
+      console.log(selector2.value.match(/[0-9]/g).length)
+
+
+      console.log(selector2.value.replace(/[0-9]/g, "0"));
+
+    });
+
+
+    const maskInput = document.querySelector(".mask-for-input");
+    maskInput.onpaste = (e) => e.preventDefault();
+    maskInput.addEventListener("keyup", e => {
+      if (e.keyCode !== 8 && e.keyCode != 46) {
+        let newValue = e.target.value.replace(/\D/g, "");
+        newValue = newValue.replace(/(.{4})/, "$1 ");
+        e.target.value = newValue;
+      }
+    });
+
+    const formContent = document.querySelector('.form-content');
+
+    formContent.addEventListener('submit', saveArticle);
+    async function saveArticle(event) {
+      event.preventDefault();
+      const myFormData = new FormData(formContent);
+      myFormData.append('dataProcessingAndPrivacyConsent', true);
+      myFormData.append('nonDisclosureAgreement', true);
+      try {
+        await fetch('https://api.plonq.ru/api/v1/external/agreement/flavors-test', {
+          method: 'POST',
+          body: myFormData
+        })
+      } catch (e) {
+        console.error({ message: 'Faled to add flavors test agreement', e });
+      }
+    }
+  </script>
+</body>
+
+</html>
